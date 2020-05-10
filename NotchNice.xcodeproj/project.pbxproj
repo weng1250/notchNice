@@ -13,9 +13,12 @@
 		A1B5DDF924670E2F009316A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1B5DDF724670E2F009316A3 /* Main.storyboard */; };
 		A1B5DDFB24670E32009316A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1B5DDFA24670E32009316A3 /* Assets.xcassets */; };
 		A1B5DDFE24670E32009316A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1B5DDFC24670E32009316A3 /* LaunchScreen.storyboard */; };
+		B57683B8AA633E00FBD5A9F8 /* libPods-NotchNice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B48841DAC4064693CC318A5E /* libPods-NotchNice.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5418038D0589A4AF65D7786D /* Pods-NotchNice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotchNice.debug.xcconfig"; path = "Target Support Files/Pods-NotchNice/Pods-NotchNice.debug.xcconfig"; sourceTree = "<group>"; };
+		88649201BA8883DB2C372C5A /* Pods-NotchNice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotchNice.release.xcconfig"; path = "Target Support Files/Pods-NotchNice/Pods-NotchNice.release.xcconfig"; sourceTree = "<group>"; };
 		A1B5DDEE24670E2F009316A3 /* NotchNice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotchNice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1B5DDF124670E2F009316A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1B5DDF324670E2F009316A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		A1B5DDFA24670E32009316A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1B5DDFD24670E32009316A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1B5DDFF24670E32009316A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B48841DAC4064693CC318A5E /* libPods-NotchNice.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NotchNice.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B57683B8AA633E00FBD5A9F8 /* libPods-NotchNice.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		57942EAD01A4B5EB4EF7705D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B48841DAC4064693CC318A5E /* libPods-NotchNice.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A1B5DDE524670E2F009316A3 = {
 			isa = PBXGroup;
 			children = (
 				A1B5DDF024670E2F009316A3 /* NotchNice */,
 				A1B5DDEF24670E2F009316A3 /* Products */,
+				D55FED094E99DD9823B1B91D /* Pods */,
+				57942EAD01A4B5EB4EF7705D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,16 @@
 			path = NotchNice;
 			sourceTree = "<group>";
 		};
+		D55FED094E99DD9823B1B91D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5418038D0589A4AF65D7786D /* Pods-NotchNice.debug.xcconfig */,
+				88649201BA8883DB2C372C5A /* Pods-NotchNice.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1B5DE0224670E32009316A3 /* Build configuration list for PBXNativeTarget "NotchNice" */;
 			buildPhases = (
+				A00CB24BA843B8C01A133312 /* [CP] Check Pods Manifest.lock */,
 				A1B5DDEA24670E2F009316A3 /* Sources */,
 				A1B5DDEB24670E2F009316A3 /* Frameworks */,
 				A1B5DDEC24670E2F009316A3 /* Resources */,
+				67EE71B077A17002F2FA4A94 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		67EE71B077A17002F2FA4A94 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NotchNice/Pods-NotchNice-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NotchNice/Pods-NotchNice-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NotchNice/Pods-NotchNice-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A00CB24BA843B8C01A133312 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NotchNice-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A1B5DDEA24670E2F009316A3 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		A1B5DE0324670E32009316A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5418038D0589A4AF65D7786D /* Pods-NotchNice.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +370,7 @@
 		};
 		A1B5DE0424670E32009316A3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88649201BA8883DB2C372C5A /* Pods-NotchNice.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

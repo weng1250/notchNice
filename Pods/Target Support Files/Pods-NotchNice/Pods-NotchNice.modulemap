@@ -1,0 +1,6 @@
+module Pods_NotchNice {
+  umbrella header "Pods-NotchNice-umbrella.h"
+
+  export *
+  module * { export * }
+}

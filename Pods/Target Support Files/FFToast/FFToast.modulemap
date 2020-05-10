@@ -1,0 +1,6 @@
+module FFToast {
+  umbrella header "FFToast-umbrella.h"
+
+  export *
+  module * { export * }
+}

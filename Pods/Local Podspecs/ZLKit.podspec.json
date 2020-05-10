@@ -1,0 +1,145 @@
+{
+  "name": "ZLKit",
+  "version": "0.0.1",
+  "summary": "A short description of ZLKit.",
+  "description": "ZLKit",
+  "homepage": "http://ZLKit",
+  "license": "MIT",
+  "authors": {
+    "WengZilin": "wzl@wzl.com"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "swift_versions": "5.0",
+  "source": {
+    "git": "http://ZLKit.git",
+    "tag": "0.0.1"
+  },
+  "default_subspecs": "ZLBasic",
+  "requires_arc": true,
+  "subspecs": [
+    {
+      "name": "ZLVendor",
+      "source_files": "ZLVendor/**/*.{h,m,mm,swift}",
+      "resources": [
+        "ZLVendor/**/*.png",
+        "ZLVendor/**/*.jpg",
+        "ZLVendor/**/*.mp4",
+        "ZLVendor/**/*.mp3",
+        "ZLVendor/**/*.xib",
+        "ZLVendor/**/*.storyboard",
+        "ZLVendor/**/*.bundle"
+      ],
+      "vendored_frameworks": "ZLVendor/Chartboost.framework"
+    },
+    {
+      "name": "ZLBasic",
+      "source_files": [
+        "ZLBasic/**/*.{h,m,mm,swift}",
+        "ZLBasic/*.{h,m,mm, swift}"
+      ],
+      "resources": [
+        "ZLBasic/**/*.png",
+        "ZLBasic/**/*.jpg",
+        "ZLBasic/**/*.mp4",
+        "ZLBasic/**/*.mp3",
+        "ZLBasic/**/*.xib",
+        "ZLBasic/**/*.storyboard",
+        "ZLBasic/**/*.bundle"
+      ],
+      "dependencies": {
+        "UMCCommon": [
+
+        ],
+        "UMCSecurityPlugins": [
+
+        ],
+        "UMCAnalytics": [
+
+        ],
+        "UMCPush": [
+
+        ],
+        "UMCCommonLog": [
+
+        ],
+        "SDWebImage": [
+          "4.4.6"
+        ],
+        "ReactiveCocoa": [
+          "~> 2.5"
+        ],
+        "FrameAccessor": [
+          "~> 1.3.2"
+        ],
+        "FFToast": [
+
+        ],
+        "ZLKit/ZLVendor": [
+
+        ]
+      },
+      "prefix_header_contents": "#import \"AFNetworking.h\"\n#import \"ViewFrameAccessor.h\"\n#import \"MTMSafeCategoryImport.h\"\n#import \"ReactiveCocoa.h\"\n#import \"FFToast/FFToast.h\"\n#import \"FFToast+ZLExtension.h\"\n#import \"LKDBHelper/LKDBHelper.h\"\n#import \"UMAnalytics/MobClick.h\"\n#import \"MTMUtilsMacro.h\"\n#import \"ZLVersionManager.h\"\n#import \"ZLKitOpenConfig.h\"\n#import \"ZLSharedDefine.h\""
+    },
+    {
+      "name": "ZLAd",
+      "source_files": "ZLAd/**/*.{h,m,mm,swift}",
+      "resources": [
+        "ZLAd/**/*.png",
+        "ZLAd/**/*.jpg",
+        "ZLAd/**/*.mp4",
+        "ZLAd/**/*.mp3",
+        "ZLAd/**/*.xib",
+        "ZLAd/**/*.storyboard",
+        "ZLAd/**/*.bundle"
+      ],
+      "dependencies": {
+        "ZLKit/ZLBasic": [
+
+        ],
+        "Google-Mobile-Ads-SDK": [
+
+        ]
+      }
+    },
+    {
+      "name": "ZLSpeech",
+      "source_files": "ZLSpeech/**/*.{h,m,mm,swift}",
+      "resources": [
+        "ZLSpeech/**/*.png",
+        "ZLSpeech/**/*.jpg",
+        "ZLSpeech/**/*.mp4",
+        "ZLSpeech/**/*.mp3",
+        "ZLSpeech/**/*.xib",
+        "ZLSpeech/**/*.storyboard",
+        "ZLSpeech/**/*.bundle"
+      ],
+      "dependencies": {
+        "ZLKit/ZLBasic": [
+
+        ]
+      },
+      "vendored_frameworks": "iflyMSC"
+    },
+    {
+      "name": "ZLTranslater",
+      "source_files": "ZLTranslater/**/*.{h,m,mm,swift}",
+      "resources": [
+        "ZLTranslater/**/*.png",
+        "ZLTranslater/**/*.jpg",
+        "ZLTranslater/**/*.mp4",
+        "ZLTranslater/**/*.mp3",
+        "ZLTranslater/**/*.xib",
+        "ZLTranslater/**/*.storyboard",
+        "ZLTranslater/**/*.bundle"
+      ],
+      "dependencies": {
+        "ZLKit/ZLBasic": [
+
+        ]
+      }
+    }
+  ],
+  "swift_version": "5.0"
+}

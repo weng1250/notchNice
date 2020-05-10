@@ -1,0 +1,6 @@
+${PODS_ROOT}/Target Support Files/Pods-NotchNice/Pods-NotchNice-resources.sh
+${PODS_CONFIGURATION_BUILD_DIR}/FFToast/FFToast.bundle
+${PODS_ROOT}/HSSetTableViewController/HSSetTableViewController/HSSetTableViewController.bundle
+${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle
+${PODS_ROOT}/UMCCommonLog/UMCommonLog/UMCommonLog.bundle
+${PODS_ROOT}/../../../ZLKit/ZLVendor/iVersion/iVersion.bundle
