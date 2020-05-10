@@ -3,16 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		A1B5DDF224670E2F009316A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B5DDF124670E2F009316A3 /* AppDelegate.swift */; };
 		A1B5DDF424670E2F009316A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B5DDF324670E2F009316A3 /* SceneDelegate.swift */; };
-		A1B5DDF624670E2F009316A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B5DDF524670E2F009316A3 /* ViewController.swift */; };
 		A1B5DDF924670E2F009316A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1B5DDF724670E2F009316A3 /* Main.storyboard */; };
 		A1B5DDFB24670E32009316A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1B5DDFA24670E32009316A3 /* Assets.xcassets */; };
 		A1B5DDFE24670E32009316A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1B5DDFC24670E32009316A3 /* LaunchScreen.storyboard */; };
+		A1B5DE072467EB69009316A3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B5DE062467EB69009316A3 /* HomeViewController.swift */; };
+		A1B5DE0D2467F6AF009316A3 /* UIStackView+Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B5DE0C2467F6AF009316A3 /* UIStackView+Background.swift */; };
 		B57683B8AA633E00FBD5A9F8 /* libPods-NotchNice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B48841DAC4064693CC318A5E /* libPods-NotchNice.a */; };
 /* End PBXBuildFile section */
 
@@ -22,11 +23,12 @@
 		A1B5DDEE24670E2F009316A3 /* NotchNice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotchNice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1B5DDF124670E2F009316A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1B5DDF324670E2F009316A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A1B5DDF524670E2F009316A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A1B5DDF824670E2F009316A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A1B5DDFA24670E32009316A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1B5DDFD24670E32009316A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1B5DDFF24670E32009316A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1B5DE062467EB69009316A3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A1B5DE0C2467F6AF009316A3 /* UIStackView+Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Background.swift"; sourceTree = "<group>"; };
 		B48841DAC4064693CC318A5E /* libPods-NotchNice.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NotchNice.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -73,7 +75,8 @@
 			children = (
 				A1B5DDF124670E2F009316A3 /* AppDelegate.swift */,
 				A1B5DDF324670E2F009316A3 /* SceneDelegate.swift */,
-				A1B5DDF524670E2F009316A3 /* ViewController.swift */,
+				A1B5DE092467F681009316A3 /* Basic */,
+				A1B5DE052467EB3F009316A3 /* Home */,
 				A1B5DDF724670E2F009316A3 /* Main.storyboard */,
 				A1B5DDFA24670E32009316A3 /* Assets.xcassets */,
 				A1B5DDFC24670E32009316A3 /* LaunchScreen.storyboard */,
@@ -82,13 +85,52 @@
 			path = NotchNice;
 			sourceTree = "<group>";
 		};
+		A1B5DE052467EB3F009316A3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A1B5DE082467EBAF009316A3 /* View */,
+				A1B5DE062467EB69009316A3 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A1B5DE082467EBAF009316A3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A1B5DE092467F681009316A3 /* Basic */ = {
+			isa = PBXGroup;
+			children = (
+				A1B5DE0A2467F68A009316A3 /* Util */,
+			);
+			path = Basic;
+			sourceTree = "<group>";
+		};
+		A1B5DE0A2467F68A009316A3 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				A1B5DE0B2467F690009316A3 /* Category */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		A1B5DE0B2467F690009316A3 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				A1B5DE0C2467F6AF009316A3 /* UIStackView+Background.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		D55FED094E99DD9823B1B91D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				5418038D0589A4AF65D7786D /* Pods-NotchNice.debug.xcconfig */,
 				88649201BA8883DB2C372C5A /* Pods-NotchNice.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -207,9 +249,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1B5DDF624670E2F009316A3 /* ViewController.swift in Sources */,
 				A1B5DDF224670E2F009316A3 /* AppDelegate.swift in Sources */,
+				A1B5DE0D2467F6AF009316A3 /* UIStackView+Background.swift in Sources */,
 				A1B5DDF424670E2F009316A3 /* SceneDelegate.swift in Sources */,
+				A1B5DE072467EB69009316A3 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

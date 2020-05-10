@@ -13,7 +13,6 @@
 #import "GADBannerView+zlExtension.h"
 #import "ZLAdLoaderAdmob.h"
 #import "ZLAdLoaderChartBoost.h"
-#import "ZLAdLoaderGDT.h"
 #import "ZLAdPlatformAction.h"
 #import "ZLAdsManager.h"
 #import "NSObject+ZLMultiParamsSelector.h"
