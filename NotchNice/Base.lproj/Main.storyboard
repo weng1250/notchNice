@@ -15,7 +15,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lKC-Of-aah">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lKC-Of-aah" userLabel="WallPaperImageView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QzY-dh-g9j" userLabel="ApplePreviewImageView">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Cqf-X0-Xnd">
@@ -26,30 +29,46 @@
                                         <state key="normal" title="+">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="actionAlbumBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SmK-In-KQp"/>
+                                            <action selector="albumBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wET-Bw-IDR"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MTs-ba-2tZ">
                                         <rect key="frame" x="71" y="5" width="70.5" height="34"/>
                                         <state key="normal" title="刘海">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="actionBangBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sTi-RO-b2X"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MVm-Qz-Z90">
                                         <rect key="frame" x="141.5" y="5" width="71" height="34"/>
                                         <state key="normal" title="壁纸">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="actionWallPaperBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ggA-Nu-rM1"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7xV-eR-xaN">
                                         <rect key="frame" x="212.5" y="5" width="70.5" height="34"/>
                                         <state key="normal" title="预览">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="actionApplePreviewBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uhY-QY-EJp"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cvr-wU-teE">
                                         <rect key="frame" x="283" y="5" width="71" height="34"/>
                                         <state key="normal" title="保存">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="actionSaveBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AvX-YJ-20z"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -63,15 +82,30 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Cqf-X0-Xnd" secondAttribute="bottom" constant="80" id="GUj-2D-3Qd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Cqf-X0-Xnd" secondAttribute="trailing" constant="30" id="PNT-2G-VGu"/>
                             <constraint firstAttribute="bottom" secondItem="lKC-Of-aah" secondAttribute="bottom" id="Qc9-Nv-Jnl"/>
+                            <constraint firstItem="QzY-dh-g9j" firstAttribute="centerY" secondItem="lKC-Of-aah" secondAttribute="centerY" id="Qdo-kI-bg2"/>
                             <constraint firstItem="Cqf-X0-Xnd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="RFI-fw-ecm"/>
                             <constraint firstItem="lKC-Of-aah" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="UaD-0B-bJH"/>
+                            <constraint firstItem="QzY-dh-g9j" firstAttribute="centerX" secondItem="lKC-Of-aah" secondAttribute="centerX" id="mIH-Eu-dYw"/>
+                            <constraint firstItem="QzY-dh-g9j" firstAttribute="height" secondItem="lKC-Of-aah" secondAttribute="height" id="o2V-5J-SGB"/>
                             <constraint firstItem="lKC-Of-aah" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="pIR-jI-mjF"/>
                             <constraint firstAttribute="trailing" secondItem="lKC-Of-aah" secondAttribute="trailing" id="vMO-4Y-nGP"/>
+                            <constraint firstItem="QzY-dh-g9j" firstAttribute="width" secondItem="lKC-Of-aah" secondAttribute="width" id="vz8-pA-2zq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="applePreviewImageView" destination="QzY-dh-g9j" id="6oY-f7-bwl"/>
+                        <outlet property="menuStackView" destination="Cqf-X0-Xnd" id="rxX-eN-4wp"/>
+                        <outlet property="wallPaperImageView" destination="lKC-Of-aah" id="As7-eY-ZA0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="0Ca-1H-7st">
+                    <connections>
+                        <action selector="handleTap:" destination="BYZ-38-t0r" id="o90-2c-xzv"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="e8K-Rz-bqd"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>

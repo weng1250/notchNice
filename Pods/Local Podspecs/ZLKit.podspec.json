@@ -78,6 +78,9 @@
         ],
         "ZLKit/ZLVendor": [
 
+        ],
+        "SnapKit": [
+
         ]
       },
       "prefix_header_contents": "#import \"AFNetworking.h\"\n#import \"ViewFrameAccessor.h\"\n#import \"MTMSafeCategoryImport.h\"\n#import \"ReactiveCocoa.h\"\n#import \"FFToast/FFToast.h\"\n#import \"FFToast+ZLExtension.h\"\n#import \"LKDBHelper/LKDBHelper.h\"\n#import \"UMAnalytics/MobClick.h\"\n#import \"MTMUtilsMacro.h\"\n#import \"ZLVersionManager.h\"\n#import \"ZLKitOpenConfig.h\"\n#import \"ZLSharedDefine.h\""
