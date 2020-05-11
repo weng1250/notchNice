@@ -13,6 +13,8 @@
 		A1B5DDFB24670E32009316A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1B5DDFA24670E32009316A3 /* Assets.xcassets */; };
 		A1B5DDFE24670E32009316A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1B5DDFC24670E32009316A3 /* LaunchScreen.storyboard */; };
 		A1B5DE072467EB69009316A3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B5DE062467EB69009316A3 /* HomeViewController.swift */; };
+		A1B5DE1B2469B6E0009316A3 /* WallPaperListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B5DE1A2469B6E0009316A3 /* WallPaperListVC.swift */; };
+		A1B5DE1D2469B705009316A3 /* BangListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B5DE1C2469B705009316A3 /* BangListVC.swift */; };
 		B57683B8AA633E00FBD5A9F8 /* libPods-NotchNice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B48841DAC4064693CC318A5E /* libPods-NotchNice.a */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +33,8 @@
 		A1B5DE0F2468341A009316A3 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		A1B5DE1024683428009316A3 /* zh-HK */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-HK"; path = "zh-HK.lproj/Main.strings"; sourceTree = "<group>"; };
 		A1B5DE1124683428009316A3 /* zh-HK */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-HK"; path = "zh-HK.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		A1B5DE1A2469B6E0009316A3 /* WallPaperListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallPaperListVC.swift; sourceTree = "<group>"; };
+		A1B5DE1C2469B705009316A3 /* BangListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BangListVC.swift; sourceTree = "<group>"; };
 		B48841DAC4064693CC318A5E /* libPods-NotchNice.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NotchNice.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -92,6 +96,8 @@
 			children = (
 				A1B5DE082467EBAF009316A3 /* View */,
 				A1B5DE062467EB69009316A3 /* HomeViewController.swift */,
+				A1B5DE1A2469B6E0009316A3 /* WallPaperListVC.swift */,
+				A1B5DE1C2469B705009316A3 /* BangListVC.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -253,6 +259,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1B5DDF224670E2F009316A3 /* AppDelegate.swift in Sources */,
+				A1B5DE1B2469B6E0009316A3 /* WallPaperListVC.swift in Sources */,
+				A1B5DE1D2469B705009316A3 /* BangListVC.swift in Sources */,
 				A1B5DDF424670E2F009316A3 /* SceneDelegate.swift in Sources */,
 				A1B5DE072467EB69009316A3 /* HomeViewController.swift in Sources */,
 			);

@@ -15,6 +15,7 @@
 			dependencies = (
 			);
 			name = UMCCommonLog;
+			productName = UMCCommonLog;
 		};
 		6F6B630FA5213AB083E7CEF1F986FE44 /* UMCCommon */ = {
 			isa = PBXAggregateTarget;
@@ -24,6 +25,7 @@
 			dependencies = (
 			);
 			name = UMCCommon;
+			productName = UMCCommon;
 		};
 		8B5BB4D9C85FBB3B774B6C624239821A /* UMCSecurityPlugins */ = {
 			isa = PBXAggregateTarget;
@@ -33,6 +35,7 @@
 			dependencies = (
 			);
 			name = UMCSecurityPlugins;
+			productName = UMCSecurityPlugins;
 		};
 		8FBAE66FA6352AB9D5094143816D813B /* UMCPush */ = {
 			isa = PBXAggregateTarget;
@@ -43,6 +46,7 @@
 				162DDFA37DF770013E4805BDD932B37C /* PBXTargetDependency */,
 			);
 			name = UMCPush;
+			productName = UMCPush;
 		};
 		B53D977A951AFC38B21751B706C1DF83 /* GoogleAppMeasurement */ = {
 			isa = PBXAggregateTarget;
@@ -54,6 +58,7 @@
 				DD61449376457E003B6EDBB84E3A5FC6 /* PBXTargetDependency */,
 			);
 			name = GoogleAppMeasurement;
+			productName = GoogleAppMeasurement;
 		};
 		FD2E8643412994484A50DA7D3BFB1EFC /* UMCAnalytics */ = {
 			isa = PBXAggregateTarget;
@@ -64,6 +69,7 @@
 				D6F37A14E44787E5115BD54D5A2580C5 /* PBXTargetDependency */,
 			);
 			name = UMCAnalytics;
+			productName = UMCAnalytics;
 		};
 		FEA3B3A570634836C0457F3D7CEF1699 /* Google-Mobile-Ads-SDK */ = {
 			isa = PBXAggregateTarget;
@@ -74,6 +80,7 @@
 				C9B67B7AD978666EAB8B538DA6646A3B /* PBXTargetDependency */,
 			);
 			name = "Google-Mobile-Ads-SDK";
+			productName = "Google-Mobile-Ads-SDK";
 		};
 /* End PBXAggregateTarget section */
 
@@ -1081,7 +1088,7 @@
 		06D4953D1865AACA4C8B0FBC78C219CC /* RACCompoundDisposable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACCompoundDisposable.h; path = ReactiveCocoa/RACCompoundDisposable.h; sourceTree = "<group>"; };
 		06DFAFFF221BBEDCC43CCB8564DB61A0 /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Source/Constraint.swift; sourceTree = "<group>"; };
 		06E7C7211389B8395A068EBC4514F5B1 /* GULReachabilityChecker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULReachabilityChecker.h; path = GoogleUtilities/Reachability/Private/GULReachabilityChecker.h; sourceTree = "<group>"; };
-		06FC5C9CF96D60C50FCD47D339C91951 /* libnanopb.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libnanopb.a; path = libnanopb.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		06FC5C9CF96D60C50FCD47D339C91951 /* libnanopb.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libnanopb.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		06FFF348CEFD32770484F631E5F19AE3 /* RACDelegateProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACDelegateProxy.m; path = ReactiveCocoa/RACDelegateProxy.m; sourceTree = "<group>"; };
 		07828317B5918FDE61842EE80A040EFE /* NSString+MTMSafe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+MTMSafe.m"; sourceTree = "<group>"; };
 		07E697DA3D7AF166989EA41D40CBDF8B /* pb_encode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pb_encode.h; sourceTree = "<group>"; };
@@ -1150,7 +1157,7 @@
 		1FB55CBD0CC3611A8DC1F733D1CEC13F /* NSIndexSet+RACSequenceAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSIndexSet+RACSequenceAdditions.h"; path = "ReactiveCocoa/NSIndexSet+RACSequenceAdditions.h"; sourceTree = "<group>"; };
 		1FC300F582EB74B6E2FF071749EF2216 /* FBLPromise+All.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+All.m"; path = "Sources/FBLPromises/FBLPromise+All.m"; sourceTree = "<group>"; };
 		1FF766D3745DF656B24A8692D75EF699 /* GoogleUtilities.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GoogleUtilities.modulemap; sourceTree = "<group>"; };
-		1FFED36A657123030ABB700256D73F15 /* libMasonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMasonry.a; path = libMasonry.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FFED36A657123030ABB700256D73F15 /* libMasonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMasonry.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2003347088C0E98F9145F15078F83D98 /* RACKVOChannel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACKVOChannel.m; path = ReactiveCocoa/RACKVOChannel.m; sourceTree = "<group>"; };
 		206C084BE348F35585A5A7C6485219CE /* UITableViewHeaderFooterView+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableViewHeaderFooterView+RACSignalSupport.h"; path = "ReactiveCocoa/UITableViewHeaderFooterView+RACSignalSupport.h"; sourceTree = "<group>"; };
 		2083298DA18113FA421B96A6559C48A2 /* YYClassInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYClassInfo.m; path = YYModel/YYClassInfo.m; sourceTree = "<group>"; };
@@ -1210,10 +1217,10 @@
 		32A2BECAD91A509320B5614374ACF1F3 /* FBLPromiseError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBLPromiseError.m; path = Sources/FBLPromises/FBLPromiseError.m; sourceTree = "<group>"; };
 		32DC9DE353D176295FF3A1A5130F8F3E /* FBLPromise+Any.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Any.m"; path = "Sources/FBLPromises/FBLPromise+Any.m"; sourceTree = "<group>"; };
 		333404C9987BA48E7FABE7547527B9B9 /* FFToast+ZLExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FFToast+ZLExtension.h"; sourceTree = "<group>"; };
-		3347A1AB6546F0A3977529B8F199DC41 /* libPromisesObjC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libPromisesObjC.a; path = libPromisesObjC.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3347A1AB6546F0A3977529B8F199DC41 /* libPromisesObjC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPromisesObjC.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		334F1C21254BB00A8EF9CADDA58EAF5F /* UIImage+ZLBlur.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+ZLBlur.h"; sourceTree = "<group>"; };
 		337F2F4F5F9075F14036FAFE54A8AD71 /* FFToast+ZLExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FFToast+ZLExtension.m"; sourceTree = "<group>"; };
-		339D3AE84F1C6EACA272FC6F2C5B1843 /* FFToast.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = FFToast.bundle; path = "FFToast-FFToast.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		339D3AE84F1C6EACA272FC6F2C5B1843 /* FFToast.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FFToast.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		33A2BC88798616EF62170EDDCF17D74F /* UIView+ZLSnap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+ZLSnap.h"; sourceTree = "<group>"; };
 		344308B07F9694A9FDAF954BC099C64F /* SVProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
 		34750F7740FF1D09DB4B3E2909282432 /* FMDB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = src/fmdb/FMDB.h; sourceTree = "<group>"; };
@@ -1230,7 +1237,7 @@
 		37D3C524C79ADD09E9DBE927A41C9885 /* NSNumber+MTMSafe.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSNumber+MTMSafe.h"; sourceTree = "<group>"; };
 		38A2863E9E0DFABD7A07BBC355C40FF0 /* HSBaseTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HSBaseTableViewCell.h; path = HSSetTableViewController/View/HSBaseTableViewCell.h; sourceTree = "<group>"; };
 		38A8FA9861C90BBA6AB4FF9BE0327080 /* QuickJSON.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QuickJSON.h; sourceTree = "<group>"; };
-		396307AFF8392287832E0074AFC96E36 /* pb_common.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pb_common.c; sourceTree = "<group>"; };
+		396307AFF8392287832E0074AFC96E36 /* pb_common.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = pb_common.c; sourceTree = "<group>"; };
 		39968C973A11517839467428C09538DA /* UMCSecurityPlugins.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UMCSecurityPlugins.release.xcconfig; sourceTree = "<group>"; };
 		3997FBB31D2458F6BDF6D8939314BDC0 /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuide.swift; path = Source/ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
 		3A6D6CBB7BED7366D01760E17E741AF4 /* MBProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MBProgressHUD.modulemap; sourceTree = "<group>"; };
@@ -1247,12 +1254,12 @@
 		3ECEEF11582071EB9F16A9FB01C5CD95 /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
 		3F6F6A0624DE1A8AD0C60AFF26BFA632 /* NSString+HSHeight.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+HSHeight.m"; path = "HSSetTableViewController/Category/NSString+HSHeight.m"; sourceTree = "<group>"; };
 		4006181ACF04D125217E5F833A42BDD9 /* fftoast_info_highlight.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = fftoast_info_highlight.png; path = FFToast/Assets/fftoast_info_highlight.png; sourceTree = "<group>"; };
-		400FF55D0451E7A8F33A3D0D3E11C1B9 /* libReachability.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libReachability.a; path = libReachability.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		400FF55D0451E7A8F33A3D0D3E11C1B9 /* libReachability.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libReachability.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		41898316B4018E2D10613DD36D94957C /* SDImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCache.m; path = SDWebImage/SDImageCache.m; sourceTree = "<group>"; };
 		41C98047E0BFA6E61782E27D3D14284A /* UITextField+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextField+RACSignalSupport.h"; path = "ReactiveCocoa/UITextField+RACSignalSupport.h"; sourceTree = "<group>"; };
 		424D6767B2F7823D9735B6C93D064860 /* MTMAlertView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MTMAlertView.m; sourceTree = "<group>"; };
 		432AF43F64F8B051CF26F2A181968CC7 /* GULNSData+zlib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GULNSData+zlib.h"; path = "GoogleUtilities/NSData+zlib/GULNSData+zlib.h"; sourceTree = "<group>"; };
-		4359FEC841567A83DF3827215C759B69 /* libLKDBHelper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libLKDBHelper.a; path = libLKDBHelper.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4359FEC841567A83DF3827215C759B69 /* libLKDBHelper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLKDBHelper.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		43B658BF776B800982E5DB298C206D64 /* ZLAppRecordUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZLAppRecordUtil.h; sourceTree = "<group>"; };
 		43D312C88A79C9285D78EC542FA51884 /* SDWebImageCodersManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCodersManager.m; path = SDWebImage/SDWebImageCodersManager.m; sourceTree = "<group>"; };
 		43E08B726B7BAC841E648D81B67E233D /* RACTupleSequence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACTupleSequence.h; path = ReactiveCocoa/RACTupleSequence.h; sourceTree = "<group>"; };
@@ -1270,7 +1277,7 @@
 		47F62CBFCC3286D70D39DDBC9D70C1AE /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		483DEE2EB9D9FA4352127CE927851C42 /* SVProgressHUD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.release.xcconfig; sourceTree = "<group>"; };
 		48809D39EDFA0600194F8FF338433667 /* pb_decode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pb_decode.h; sourceTree = "<group>"; };
-		490AC753C5C289D7B70E73B4E7512560 /* libReactiveCocoa.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libReactiveCocoa.a; path = libReactiveCocoa.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		490AC753C5C289D7B70E73B4E7512560 /* libReactiveCocoa.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libReactiveCocoa.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4923F588AFD0E2BD2388557EFE52F203 /* ZLKitOpenConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZLKitOpenConfig.h; path = ZLBasic/ZLKitOpenConfig.h; sourceTree = "<group>"; };
 		4A2AB964792440B57B7A9567134E38A7 /* YYModel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YYModel.modulemap; sourceTree = "<group>"; };
 		4A36347098DEDBE6E3278DE555B38682 /* NSImage+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSImage+WebCache.h"; path = "SDWebImage/NSImage+WebCache.h"; sourceTree = "<group>"; };
@@ -1358,7 +1365,7 @@
 		6559CE9824E1F02D701D50ED1AFDEB2D /* NSInvocation+RACTypeParsing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSInvocation+RACTypeParsing.h"; path = "ReactiveCocoa/NSInvocation+RACTypeParsing.h"; sourceTree = "<group>"; };
 		65677E5B18D83E42165E1C4CE6063F0E /* UMCCommon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UMCCommon.debug.xcconfig; sourceTree = "<group>"; };
 		659B1DF41C98DA965176D056795C081B /* RACEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACEvent.h; path = ReactiveCocoa/RACEvent.h; sourceTree = "<group>"; };
-		65E44A7F34FF4A05ED47A2335BDCD652 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		65E44A7F34FF4A05ED47A2335BDCD652 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		669836F6D71141ED0676B6A918EF6294 /* pb_common.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pb_common.h; sourceTree = "<group>"; };
 		66C0D147F0F0166DCE54E881523BE922 /* SDWebImageCoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCoder.m; path = SDWebImage/SDWebImageCoder.m; sourceTree = "<group>"; };
 		670E3D1FFF62045A61BB78D3319AA858 /* FMDB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FMDB.release.xcconfig; sourceTree = "<group>"; };
@@ -1381,10 +1388,10 @@
 		6B71FECDF6C1B5B6473E16C3C8D6C242 /* Pods-NotchNice-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NotchNice-umbrella.h"; sourceTree = "<group>"; };
 		6BA5A1796A334378CF1B0F426500867C /* NSFileHandle+RACSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSFileHandle+RACSupport.m"; path = "ReactiveCocoa/NSFileHandle+RACSupport.m"; sourceTree = "<group>"; };
 		6BC93D2005BBC69EA4C3CDBA54607CF7 /* RACEXTKeyPathCoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACEXTKeyPathCoding.h; path = ReactiveCocoa/extobjc/RACEXTKeyPathCoding.h; sourceTree = "<group>"; };
-		6C0F7B59F9407EDDC03A449EF80EA0EC /* libPods-NotchNice.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-NotchNice.a"; path = "libPods-NotchNice.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C0F7B59F9407EDDC03A449EF80EA0EC /* libPods-NotchNice.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NotchNice.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C12CB1E83CC1E2F81D18358844AB572 /* fftoast_info_highlight@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "fftoast_info_highlight@2x.png"; path = "FFToast/Assets/fftoast_info_highlight@2x.png"; sourceTree = "<group>"; };
 		6C2324C58DF45A3D7E1F16EBE4518F00 /* ZLRateHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZLRateHelper.m; sourceTree = "<group>"; };
-		6CEBFE68CDC10C0E94724527435D5684 /* libFFToast.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libFFToast.a; path = libFFToast.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CEBFE68CDC10C0E94724527435D5684 /* libFFToast.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFFToast.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DAB902AB821D02E08DBF71EBD345CF2 /* UIViewController+HSSetTableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+HSSetTableView.h"; path = "HSSetTableViewController/manager/UIViewController+HSSetTableView.h"; sourceTree = "<group>"; };
 		6DED91D3BC6640F01AD3B3CA393B76C6 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = src/fmdb/FMDatabaseQueue.m; sourceTree = "<group>"; };
 		6E4697F60F3E74CC42C28B9667203024 /* HSSetTableViewControllerConst.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HSSetTableViewControllerConst.m; path = HSSetTableViewController/HSSetTableViewControllerConst.m; sourceTree = "<group>"; };
@@ -1455,7 +1462,7 @@
 		8513C27844A8B6B30AE61CB43055CD09 /* GULKeychainStorage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GULKeychainStorage.m; path = GoogleUtilities/Environment/SecureStorage/GULKeychainStorage.m; sourceTree = "<group>"; };
 		85A0C662E574A637F20298FAC0561BC3 /* RACTuple.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACTuple.m; path = ReactiveCocoa/RACTuple.m; sourceTree = "<group>"; };
 		8618AF01F9AA481E08471D6E7E0C5F5F /* SDWebImageCompat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageCompat.h; path = SDWebImage/SDWebImageCompat.h; sourceTree = "<group>"; };
-		865A29C4A7B073FA5B55A6EC683B5A49 /* RACCompoundDisposableProvider.d */ = {isa = PBXFileReference; includeInIndex = 1; name = RACCompoundDisposableProvider.d; path = ReactiveCocoa/RACCompoundDisposableProvider.d; sourceTree = "<group>"; };
+		865A29C4A7B073FA5B55A6EC683B5A49 /* RACCompoundDisposableProvider.d */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.dtrace; name = RACCompoundDisposableProvider.d; path = ReactiveCocoa/RACCompoundDisposableProvider.d; sourceTree = "<group>"; };
 		87DD77FF8F944C81824716A8CC58DA28 /* RACCompoundDisposable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACCompoundDisposable.m; path = ReactiveCocoa/RACCompoundDisposable.m; sourceTree = "<group>"; };
 		882A59E63033BFF43EFAAE92461F3F07 /* MTMUtilsMacro_UI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MTMUtilsMacro_UI.h; sourceTree = "<group>"; };
 		8833BD0B520EBB9D99AEC5E80A596FC5 /* FrameAccessor.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FrameAccessor.modulemap; sourceTree = "<group>"; };
@@ -1468,7 +1475,7 @@
 		8A8D7210A16025BE582EF932D802EBC1 /* FBLPromise+Then.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Then.h"; path = "Sources/FBLPromises/include/FBLPromise+Then.h"; sourceTree = "<group>"; };
 		8AA584CA4A0F9D09B506DA4246846173 /* RACChannel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACChannel.m; path = ReactiveCocoa/RACChannel.m; sourceTree = "<group>"; };
 		8AF9EAD189DD175D2BF13A596BFC1611 /* HSBaseTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HSBaseTableViewCell.m; path = HSSetTableViewController/View/HSBaseTableViewCell.m; sourceTree = "<group>"; };
-		8B8FAB0D627B17EDE1366984278705D9 /* libMBProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMBProgressHUD.a; path = libMBProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B8FAB0D627B17EDE1366984278705D9 /* libMBProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMBProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B901F7AEA68928A64A0D701764A82C3 /* SDWebImageDownloaderOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloaderOperation.h; path = SDWebImage/SDWebImageDownloaderOperation.h; sourceTree = "<group>"; };
 		8BC80B014F9B8A6713A2D389E6B5F78C /* LKDB+Mapping.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "LKDB+Mapping.h"; path = "LKDBHelper/Helper/LKDB+Mapping.h"; sourceTree = "<group>"; };
 		8C73CB3D3A1C56A5F003F1D4408E4943 /* UIViewController+HSSetTableView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+HSSetTableView.m"; path = "HSSetTableViewController/manager/UIViewController+HSSetTableView.m"; sourceTree = "<group>"; };
@@ -1507,7 +1514,7 @@
 		952000CFF0E64F993D05FBC49EFC3DA5 /* UIImage+FFToast.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+FFToast.m"; path = "FFToast/Category/UIImage+FFToast.m"; sourceTree = "<group>"; };
 		95CA99956B0775B32E738BFB3C992B11 /* YYModel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YYModel-umbrella.h"; sourceTree = "<group>"; };
 		9678C63C815D716A459179A0D36817B0 /* FrameAccessor-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FrameAccessor-prefix.pch"; sourceTree = "<group>"; };
-		979486118B3E90C08386079D57962701 /* libSnapKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSnapKit.a; path = libSnapKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		979486118B3E90C08386079D57962701 /* libSnapKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSnapKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		97E0A202C4A5186532AF5F5CF9C2D142 /* UIStackView+Background.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIStackView+Background.swift"; sourceTree = "<group>"; };
 		98323DC6E7B03CC0C482380C2B2CC873 /* nanopb-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "nanopb-prefix.pch"; sourceTree = "<group>"; };
 		983E21E1FD7F530ADA481EB188CD9936 /* GULSceneDelegateSwizzler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULSceneDelegateSwizzler.h; path = GoogleUtilities/SceneDelegateSwizzler/Private/GULSceneDelegateSwizzler.h; sourceTree = "<group>"; };
@@ -1532,7 +1539,7 @@
 		9CEB3FB4BD4D576046DF297F70557FF6 /* UIImage+ForceDecode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+ForceDecode.h"; path = "SDWebImage/UIImage+ForceDecode.h"; sourceTree = "<group>"; };
 		9D032A88A1D8AD3864B4E981854772DA /* GULNSData+zlib.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GULNSData+zlib.m"; path = "GoogleUtilities/NSData+zlib/GULNSData+zlib.m"; sourceTree = "<group>"; };
 		9D1D38062C904FC67645D3FA6E4ABD3A /* UIBarButtonItem+RACCommandSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIBarButtonItem+RACCommandSupport.h"; path = "ReactiveCocoa/UIBarButtonItem+RACCommandSupport.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E70F88D1B50CDAFF30B26BA4F18EA35 /* UIActionSheet+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActionSheet+RACSignalSupport.h"; path = "ReactiveCocoa/UIActionSheet+RACSignalSupport.h"; sourceTree = "<group>"; };
 		9E8A948B501788C5C6B9D861D8E1D6C3 /* SDWebImageManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageManager.h; path = SDWebImage/SDWebImageManager.h; sourceTree = "<group>"; };
 		9E93DFF28E439AD6C313D3A216A586D6 /* RACScheduler+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RACScheduler+Private.h"; path = "ReactiveCocoa/RACScheduler+Private.h"; sourceTree = "<group>"; };
@@ -1548,21 +1555,21 @@
 		A16E8534C80BBEAD109A5D0D20BBFE8C /* FFToast-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FFToast-umbrella.h"; sourceTree = "<group>"; };
 		A1A869C24FC372DB70E6B56583021A32 /* FMDatabase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = src/fmdb/FMDatabase.m; sourceTree = "<group>"; };
 		A1A978BD714439E427640DEBC7D744F3 /* MASConstraintMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraintMaker.m; path = Masonry/MASConstraintMaker.m; sourceTree = "<group>"; };
-		A2022DA95F26221C30E1091095D24C1B /* libFrameAccessor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libFrameAccessor.a; path = libFrameAccessor.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2022DA95F26221C30E1091095D24C1B /* libFrameAccessor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFrameAccessor.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A202DC044F97CBB755E2C56494F63181 /* UIImage+GIF.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+GIF.m"; path = "SDWebImage/UIImage+GIF.m"; sourceTree = "<group>"; };
 		A210D176331DBE4E2661225C4B3D1F58 /* RACImmediateScheduler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACImmediateScheduler.h; path = ReactiveCocoa/RACImmediateScheduler.h; sourceTree = "<group>"; };
 		A26839D92905F6FC509EBC2DB2A313FF /* ZLAdsManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZLAdsManager.m; path = ZLAd/ZLAdsManager.m; sourceTree = "<group>"; };
 		A280AEB02354B56E5C6C7AD4C9BE271E /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVRadialGradientLayer.m; path = SVProgressHUD/SVRadialGradientLayer.m; sourceTree = "<group>"; };
 		A2EB7E2E80F120CA9335D74B0F3AEB2A /* MTMNavigationViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MTMNavigationViewController.m; sourceTree = "<group>"; };
 		A341905C0781BE9B034F1C62417C2629 /* GULSwizzler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GULSwizzler.m; path = GoogleUtilities/MethodSwizzler/GULSwizzler.m; sourceTree = "<group>"; };
-		A3A80BA70CFB7F75C5391BEBBBA8C9DA /* libFMDB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libFMDB.a; path = libFMDB.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3A80BA70CFB7F75C5391BEBBBA8C9DA /* libFMDB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFMDB.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3B301DD028FBBE4CBC7B5373FFFDBCA /* ZLKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZLKit-umbrella.h"; sourceTree = "<group>"; };
 		A3CDDE4AE9533CF972F59801622F8334 /* UIImage+MemoryCacheCost.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+MemoryCacheCost.m"; path = "SDWebImage/UIImage+MemoryCacheCost.m"; sourceTree = "<group>"; };
 		A3E4FAE8EC2D2693CBBBB8EDAA6316ED /* SDWebImagePrefetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImagePrefetcher.h; path = SDWebImage/SDWebImagePrefetcher.h; sourceTree = "<group>"; };
 		A47A41C20E8CBC68B6EAF1067C974E10 /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Source/ConstraintView.swift; sourceTree = "<group>"; };
 		A5A07806FAFAF43E47DB9F9ECB69E127 /* UIView+HSFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+HSFrame.h"; path = "HSSetTableViewController/Category/UIView+HSFrame.h"; sourceTree = "<group>"; };
 		A5BFE03DE47333132F0782E1D11F2E97 /* YYClassInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYClassInfo.h; path = YYModel/YYClassInfo.h; sourceTree = "<group>"; };
-		A6877F62E1FA666884E226CFB94E8EB1 /* RACSignalProvider.d */ = {isa = PBXFileReference; includeInIndex = 1; name = RACSignalProvider.d; path = ReactiveCocoa/RACSignalProvider.d; sourceTree = "<group>"; };
+		A6877F62E1FA666884E226CFB94E8EB1 /* RACSignalProvider.d */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.dtrace; name = RACSignalProvider.d; path = ReactiveCocoa/RACSignalProvider.d; sourceTree = "<group>"; };
 		A6B438ACBAF8B1BF5F6C1B925ACEB028 /* GULKeychainStorage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULKeychainStorage.h; path = GoogleUtilities/Environment/Public/GULKeychainStorage.h; sourceTree = "<group>"; };
 		A7809C657D1369BCB66C010B30C895A6 /* NSInvocation+RACTypeParsing.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSInvocation+RACTypeParsing.m"; path = "ReactiveCocoa/NSInvocation+RACTypeParsing.m"; sourceTree = "<group>"; };
 		A7B5C9D59C84A616C851917B71FF9AA2 /* NSArray+RACSequenceAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+RACSequenceAdditions.h"; path = "ReactiveCocoa/NSArray+RACSequenceAdditions.h"; sourceTree = "<group>"; };
@@ -1590,7 +1597,7 @@
 		AF270D160266BB53029D2414CB736256 /* SDWebImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloader.m; path = SDWebImage/SDWebImageDownloader.m; sourceTree = "<group>"; };
 		AF64A7531C2A18E48F566138D9AC3CEB /* UIImageView+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+WebCache.m"; path = "SDWebImage/UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		B02B034145EE3585FE5C87ED5D21D6BC /* RACTuple.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACTuple.h; path = ReactiveCocoa/RACTuple.h; sourceTree = "<group>"; };
-		B0B214D775196BA7CA8E17E53048A493 /* libSDWebImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSDWebImage.a; path = libSDWebImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0B214D775196BA7CA8E17E53048A493 /* libSDWebImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSDWebImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B116A71ED2E0F5FEA9C3825ED1ACDDEC /* MASLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLayoutConstraint.h; path = Masonry/MASLayoutConstraint.h; sourceTree = "<group>"; };
 		B1B7409572F34E3ABC37F13370AE1381 /* ZLKitOpenConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZLKitOpenConfig.m; path = ZLBasic/ZLKitOpenConfig.m; sourceTree = "<group>"; };
 		B23221E13CF36DCDBE1AF7BC91497811 /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierTarget.swift; path = Source/ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
@@ -1604,7 +1611,7 @@
 		B3A2093C0D68C50195C851EAC7A8FA5E /* MASLayoutConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASLayoutConstraint.m; path = Masonry/MASLayoutConstraint.m; sourceTree = "<group>"; };
 		B3C53ADA608A1EC56254AD4DF70B6667 /* Pods-NotchNice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NotchNice.release.xcconfig"; sourceTree = "<group>"; };
 		B431E99DA75D645CE75EF4C01D8AAD2E /* UITableViewCell+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableViewCell+RACSignalSupport.h"; path = "ReactiveCocoa/UITableViewCell+RACSignalSupport.h"; sourceTree = "<group>"; };
-		B43874C6CBB50E7134FBEC24BABFE14F /* libGoogleUtilities.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libGoogleUtilities.a; path = libGoogleUtilities.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B43874C6CBB50E7134FBEC24BABFE14F /* libGoogleUtilities.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGoogleUtilities.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B470C39F5522BE69F0278A7EC31FDB7E /* UIImage+ZLBlur.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ZLBlur.m"; sourceTree = "<group>"; };
 		B4F62D3AD5584E73B6C7AC0D2B785146 /* RACSequence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACSequence.h; path = ReactiveCocoa/RACSequence.h; sourceTree = "<group>"; };
 		B4F6CC9DBD3C850E044222691608BF00 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVRadialGradientLayer.h; path = SVProgressHUD/SVRadialGradientLayer.h; sourceTree = "<group>"; };
@@ -1623,7 +1630,7 @@
 		B9A07FFAA7CB204B903FC4810F5430B5 /* NSObject+ZLMultiParamsSelector.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZLMultiParamsSelector.m"; sourceTree = "<group>"; };
 		B9CB1A135DD760FD6DEFE3B1CBD0CC06 /* ZLLauncher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZLLauncher.h; sourceTree = "<group>"; };
 		B9D4AF187CB0B29BB300FDD0D006D36C /* NSObject+RACKVOWrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+RACKVOWrapper.h"; path = "ReactiveCocoa/NSObject+RACKVOWrapper.h"; sourceTree = "<group>"; };
-		B9DCE47DBCD865F2348C4A682C3B8C68 /* pb_encode.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pb_encode.c; sourceTree = "<group>"; };
+		B9DCE47DBCD865F2348C4A682C3B8C68 /* pb_encode.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = pb_encode.c; sourceTree = "<group>"; };
 		B9E43677364F85B99C64C9F5A4B556A8 /* HSTitleCellModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HSTitleCellModel.h; path = HSSetTableViewController/Model/HSTitleCellModel.h; sourceTree = "<group>"; };
 		BB301F67DB389ECD6490FA6ADDE47C4A /* RACTestScheduler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACTestScheduler.h; path = ReactiveCocoa/RACTestScheduler.h; sourceTree = "<group>"; };
 		BB34D43C4DD359264EF4D758D484B45C /* HSHeaderModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HSHeaderModel.m; path = HSSetTableViewController/Model/HSHeaderModel.m; sourceTree = "<group>"; };
@@ -1642,12 +1649,12 @@
 		BE8061E5039730166F5D13456DCA21FD /* ConstraintConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = Source/ConstraintConfig.swift; sourceTree = "<group>"; };
 		BE930D6C08459AD4936F9D48F84804EE /* NSSet+RACSequenceAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSSet+RACSequenceAdditions.m"; path = "ReactiveCocoa/NSSet+RACSequenceAdditions.m"; sourceTree = "<group>"; };
 		BE9A608F9AA2A3505A09BCF137F4F00E /* GULMutableDictionary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GULMutableDictionary.m; path = GoogleUtilities/Network/GULMutableDictionary.m; sourceTree = "<group>"; };
-		BEAC284B0F190B134DFB1D07A68B7AD9 /* libZLKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libZLKit.a; path = libZLKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEAC284B0F190B134DFB1D07A68B7AD9 /* libZLKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libZLKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF572702A4D895F584DC83E90D59B1A7 /* UIAlertView+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAlertView+RACSignalSupport.h"; path = "ReactiveCocoa/UIAlertView+RACSignalSupport.h"; sourceTree = "<group>"; };
 		BFDFF3EC5789A5CCBB2BCDF8B40E6205 /* RACSerialDisposable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACSerialDisposable.m; path = ReactiveCocoa/RACSerialDisposable.m; sourceTree = "<group>"; };
 		C013C37341E354AA17416F00FD2A0BD9 /* NSUserDefaults+RACSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSUserDefaults+RACSupport.m"; path = "ReactiveCocoa/NSUserDefaults+RACSupport.m"; sourceTree = "<group>"; };
 		C11B280EE666C34DBF336E9C549FBF41 /* FBLPromise+Delay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Delay.h"; path = "Sources/FBLPromises/include/FBLPromise+Delay.h"; sourceTree = "<group>"; };
-		C1364A4768B78B78379F2ED43779E36F /* ZLKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ZLKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C1364A4768B78B78379F2ED43779E36F /* ZLKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = ZLKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C16864ED32A98ED8789BD0DDA2BF1D3B /* NSData+RACSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+RACSupport.m"; path = "ReactiveCocoa/NSData+RACSupport.m"; sourceTree = "<group>"; };
 		C1A8AD0D6CE8E64E38CE3CD53377EB85 /* UIImageView+HighlightedWebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+HighlightedWebCache.h"; path = "SDWebImage/UIImageView+HighlightedWebCache.h"; sourceTree = "<group>"; };
 		C1E16A6B246334E11824397208DF1260 /* FBLPromise+Validate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Validate.h"; path = "Sources/FBLPromises/include/FBLPromise+Validate.h"; sourceTree = "<group>"; };
@@ -1672,7 +1679,7 @@
 		C93FB7DBF07AE0132391BAED823E04F2 /* NSURLConnection+RACSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURLConnection+RACSupport.h"; path = "ReactiveCocoa/NSURLConnection+RACSupport.h"; sourceTree = "<group>"; };
 		C9B6E693728DE33BA1D85D19BEA7B077 /* THLabel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "THLabel-umbrella.h"; sourceTree = "<group>"; };
 		C9E1EA6ECDF1536B0A9CCBC52895F25A /* HSSetTableViewManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HSSetTableViewManager.m; path = HSSetTableViewController/manager/HSSetTableViewManager.m; sourceTree = "<group>"; };
-		C9FD683B78E28740D19B3F6E87A74752 /* pb_decode.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pb_decode.c; sourceTree = "<group>"; };
+		C9FD683B78E28740D19B3F6E87A74752 /* pb_decode.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = pb_decode.c; sourceTree = "<group>"; };
 		CA6DDAE10209831ECD8FAFF5462088A4 /* SDWebImageCompat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCompat.m; path = SDWebImage/SDWebImageCompat.m; sourceTree = "<group>"; };
 		CA6E934CD824F202EF984DEC861DA7EC /* ConstraintInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = Source/ConstraintInsets.swift; sourceTree = "<group>"; };
 		CA7C09085CD6749D91684C95BE905B4D /* GoogleAppMeasurement.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleAppMeasurement.debug.xcconfig; sourceTree = "<group>"; };
@@ -1680,7 +1687,7 @@
 		CAED4FD3D13AD27715E2597E994B05C0 /* FFToast-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FFToast-prefix.pch"; sourceTree = "<group>"; };
 		CB251B5387BDA665F019A1C57F96A36B /* RACIndexSetSequence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACIndexSetSequence.h; path = ReactiveCocoa/RACIndexSetSequence.h; sourceTree = "<group>"; };
 		CB78814B0E1678C38B99ED4E8C1C0A2E /* GoogleAppMeasurement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleAppMeasurement.framework; path = Frameworks/GoogleAppMeasurement.framework; sourceTree = "<group>"; };
-		CBA04857543FDAE44F8B58007CAFCF90 /* libTHLabel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libTHLabel.a; path = libTHLabel.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBA04857543FDAE44F8B58007CAFCF90 /* libTHLabel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTHLabel.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC262DB2E929B4825865B05A7E9930A7 /* NSObject+RACDeallocating.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+RACDeallocating.h"; path = "ReactiveCocoa/NSObject+RACDeallocating.h"; sourceTree = "<group>"; };
 		CC8987A0D5A607C3FF1A25F4370B0A45 /* SDWebImageGIFCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageGIFCoder.h; path = SDWebImage/SDWebImageGIFCoder.h; sourceTree = "<group>"; };
 		CD03BB5B0F5563CD08B52E2209BA7C9F /* FrameAccessor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FrameAccessor.release.xcconfig; sourceTree = "<group>"; };
@@ -1743,7 +1750,7 @@
 		E3D45E9F25009702974467D24E5CD361 /* ReactiveCocoa-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReactiveCocoa-prefix.pch"; sourceTree = "<group>"; };
 		E411B6C9876A7A86EDB3AFC1D11027EC /* SDWebImageManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageManager.m; path = SDWebImage/SDWebImageManager.m; sourceTree = "<group>"; };
 		E4298B0C2112B86E7EF428AEB1F989FB /* Reachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
-		E460D5B0416D36F66EE8EC89E5D2FA0A /* libYYModel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libYYModel.a; path = libYYModel.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E460D5B0416D36F66EE8EC89E5D2FA0A /* libYYModel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libYYModel.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E463C5B85306E4A6D6FE6719A5E1353A /* LKDBHelper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LKDBHelper.modulemap; sourceTree = "<group>"; };
 		E4948C947C5B03BC41284D504213A388 /* SDWebImageFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageFrame.h; path = SDWebImage/SDWebImageFrame.h; sourceTree = "<group>"; };
 		E4D6EC8045F1D628C4758AFBC9B03240 /* NSObject+LKModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+LKModel.h"; path = "LKDBHelper/Helper/NSObject+LKModel.h"; sourceTree = "<group>"; };
@@ -1763,7 +1770,7 @@
 		E8EE7CB1702E6639671CB01C45415BBD /* UIDevice+ZLExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+ZLExtension.m"; sourceTree = "<group>"; };
 		E90BA822AA1FF85634441911D428F67C /* UISegmentedControl+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UISegmentedControl+RACSignalSupport.h"; path = "ReactiveCocoa/UISegmentedControl+RACSignalSupport.h"; sourceTree = "<group>"; };
 		E94F2DEEDA8D4FBF3BCC131B43C0E1AF /* GoogleUtilities-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleUtilities-umbrella.h"; sourceTree = "<group>"; };
-		E97D43C46A45EE515A4DA3AF94398441 /* libSVProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSVProgressHUD.a; path = libSVProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E97D43C46A45EE515A4DA3AF94398441 /* libSVProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSVProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E988617068EB273BFAEE115A59497DDE /* RACSubject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACSubject.m; path = ReactiveCocoa/RACSubject.m; sourceTree = "<group>"; };
 		E9E939DBB2B84B4B3A3B458EB30D4767 /* FBLPromise+Always.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Always.h"; path = "Sources/FBLPromises/include/FBLPromise+Always.h"; sourceTree = "<group>"; };
 		EA0C13E27E1B3895CCE9DF2260D00D8B /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = src/fmdb/FMDatabaseAdditions.h; sourceTree = "<group>"; };
@@ -1790,7 +1797,7 @@
 		F0559CEE3915B7149A11567B13204628 /* UIStepper+RACSignalSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIStepper+RACSignalSupport.m"; path = "ReactiveCocoa/UIStepper+RACSignalSupport.m"; sourceTree = "<group>"; };
 		F08B5AE979961B85321CEF921074A1D2 /* UIRefreshControl+RACCommandSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIRefreshControl+RACCommandSupport.m"; path = "ReactiveCocoa/UIRefreshControl+RACCommandSupport.m"; sourceTree = "<group>"; };
 		F0A2F96C44903F7AF83F6956D0C37F29 /* SDWebImageGIFCoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageGIFCoder.m; path = SDWebImage/SDWebImageGIFCoder.m; sourceTree = "<group>"; };
-		F0B62A860320E4473366DF45D300F20B /* libHSSetTableViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libHSSetTableViewController.a; path = libHSSetTableViewController.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0B62A860320E4473366DF45D300F20B /* libHSSetTableViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libHSSetTableViewController.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1890133020D142F3051D84FE8740715 /* ZLAdLoaderAdmob.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZLAdLoaderAdmob.h; path = ZLAd/ZLAdLoaderAdmob.h; sourceTree = "<group>"; };
 		F1C2B8E817EA077A506AD54FC150CF2D /* iVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = iVersion.h; sourceTree = "<group>"; };
 		F1D4BEF1BD916A4089A00F2661854C55 /* UIView+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+WebCache.h"; path = "SDWebImage/UIView+WebCache.h"; sourceTree = "<group>"; };
@@ -2029,7 +2036,6 @@
 				889577055DB3CE5DC236B68056ABD567 /* NSString+MTMSafe.h */,
 				07828317B5918FDE61842EE80A040EFE /* NSString+MTMSafe.m */,
 			);
-			name = SafeAPI;
 			path = SafeAPI;
 			sourceTree = "<group>";
 		};
@@ -2081,7 +2087,6 @@
 				51B073B28D2458A5DBEA483C8BAAE325 /* UILayoutSupport+Extensions.swift */,
 				EADD8B57A9D76ED1688813944AD1DAE3 /* Support Files */,
 			);
-			name = SnapKit;
 			path = SnapKit;
 			sourceTree = "<group>";
 		};
@@ -2125,7 +2130,6 @@
 				5C263B3C470F47C1560D618B12019239 /* UIDevice+ZLExtension.h */,
 				E8EE7CB1702E6639671CB01C45415BBD /* UIDevice+ZLExtension.m */,
 			);
-			name = UIDevice;
 			path = UIDevice;
 			sourceTree = "<group>";
 		};
@@ -2143,7 +2147,6 @@
 				19AD64EF92380BCB3675B4672B633C28 /* Resources */,
 				E8DE71255F8D473DB6BB69DD2B62B61D /* Support Files */,
 			);
-			name = SVProgressHUD;
 			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
@@ -2153,7 +2156,6 @@
 				45D64C512975F7CDE32569F173523A70 /* Frameworks */,
 				8139133B42F5C50621B9A87EE7897002 /* Support Files */,
 			);
-			name = UMCCommon;
 			path = UMCCommon;
 			sourceTree = "<group>";
 		};
@@ -2167,7 +2169,6 @@
 				71BBE244310EC4D02FAD763D2928C80C /* ZLAboutItem.h */,
 				0A5D10C6366F87F5F8FDB26487201969 /* ZLAboutItem.m */,
 			);
-			name = ZLAboutController;
 			path = ZLAboutController;
 			sourceTree = "<group>";
 		};
@@ -2192,7 +2193,6 @@
 				000C30E57A34453AF6494ED3921F6A15 /* ZLRateHelper.h */,
 				6C2324C58DF45A3D7E1F16EBE4518F00 /* ZLRateHelper.m */,
 			);
-			name = ZLRate;
 			path = ZLRate;
 			sourceTree = "<group>";
 		};
@@ -2261,7 +2261,6 @@
 				059136E8D096C3EB6B6FE81D72D81D1D /* standard */,
 				80AA2D2880D180FD7F68AD156AC8F026 /* Support Files */,
 			);
-			name = FMDB;
 			path = FMDB;
 			sourceTree = "<group>";
 		};
@@ -2271,7 +2270,6 @@
 				38A8FA9861C90BBA6AB4FF9BE0327080 /* QuickJSON.h */,
 				FA27DD4C476B312C3AC7F35950F978C2 /* QuickJSON.m */,
 			);
-			name = QuickJSON;
 			path = QuickJSON;
 			sourceTree = "<group>";
 		};
@@ -2306,7 +2304,6 @@
 				F5A0DE6CBE94559E4B92931E7D39F728 /* ZLAppStoreManager.h */,
 				696AA78DD66A651B660C5F5A2E4938B9 /* ZLAppStoreManager.m */,
 			);
-			name = ZLAppStore;
 			path = ZLAppStore;
 			sourceTree = "<group>";
 		};
@@ -2318,7 +2315,6 @@
 				72CEBAD738892C46EA2CABCA38CE5D1C /* MTMPopupController.h */,
 				81E509170F075463027C2CEFC338F7F5 /* MTMPopupController.m */,
 			);
-			name = MTMAlertView;
 			path = MTMAlertView;
 			sourceTree = "<group>";
 		};
@@ -2344,7 +2340,6 @@
 				8E2BA73C3A0E2FAC4DB9364B0937944C /* ZLPushManager.h */,
 				69FCD8656A1570BCF36EB087B16F64C7 /* ZLPushManager.m */,
 			);
-			name = ZLPush;
 			path = ZLPush;
 			sourceTree = "<group>";
 		};
@@ -2378,7 +2373,6 @@
 				C8682A83407DE3352CB0074694378A22 /* ViewController+MASAdditions.m */,
 				C4C3BEDCC2CBDDED142FB204BA290A9B /* Support Files */,
 			);
-			name = Masonry;
 			path = Masonry;
 			sourceTree = "<group>";
 		};
@@ -2388,7 +2382,6 @@
 				57F16CC747EBA0133CB54B3FD6DEAE2F /* ZLShareManager.h */,
 				CDB8556545A38F718DC5C6D6209DAAE0 /* ZLShareManager.m */,
 			);
-			name = ZLShare;
 			path = ZLShare;
 			sourceTree = "<group>";
 		};
@@ -2398,7 +2391,6 @@
 				AB50A5EDDA81AC153AB27170AB21E1FA /* ZLMembershipCenter.h */,
 				70155A9874CBCE4C64F902BF2F9ADD26 /* ZLMembershipCenter.m */,
 			);
-			name = ZLMembership;
 			path = ZLMembership;
 			sourceTree = "<group>";
 		};
@@ -2409,7 +2401,6 @@
 				33A2BC88798616EF62170EDDCF17D74F /* UIView+ZLSnap.h */,
 				7199CFA441135A6CA25A154223D6B74A /* UIView+ZLSnap.m */,
 			);
-			name = UIView;
 			path = UIView;
 			sourceTree = "<group>";
 		};
@@ -2443,7 +2434,6 @@
 				E4298B0C2112B86E7EF428AEB1F989FB /* Reachability.m */,
 				D009D3AB8EF44B7B1535DD1974E21B6C /* Support Files */,
 			);
-			name = Reachability;
 			path = Reachability;
 			sourceTree = "<group>";
 		};
@@ -2530,7 +2520,6 @@
 				2B070A36DCBEBC87073E627DBB972F7A /* UIViewController+MTEConvenience.swift */,
 				4AEB1C26FCDBC3CD3D1FF1A1DAC4B91A /* ZLKit-Bridging-Header.h */,
 			);
-			name = Other;
 			path = Other;
 			sourceTree = "<group>";
 		};
@@ -2540,7 +2529,6 @@
 				0BE961EAD643BF5C50222D6F9FCA13E2 /* Frameworks */,
 				85534DD7C4A593A11C568E6A11190291 /* Support Files */,
 			);
-			name = UMCSecurityPlugins;
 			path = UMCSecurityPlugins;
 			sourceTree = "<group>";
 		};
@@ -2614,7 +2602,6 @@
 				AF0E7C5B9E383F543428F75E6DE9DF31 /* Frameworks */,
 				A6540D2C9AB7F27650DFB6E57EE2E4AC /* Support Files */,
 			);
-			name = UMCAnalytics;
 			path = UMCAnalytics;
 			sourceTree = "<group>";
 		};
@@ -2646,7 +2633,6 @@
 				DA65FF16FB8E8DD68C633FF1B83AF547 /* Frameworks */,
 				19E4F98D0D580BA8C38F34611C5EAE98 /* Support Files */,
 			);
-			name = "Google-Mobile-Ads-SDK";
 			path = "Google-Mobile-Ads-SDK";
 			sourceTree = "<group>";
 		};
@@ -2656,7 +2642,6 @@
 				377A54FC5AFAF1015348858C5B6B4F24 /* ZLDevceAuthorize.h */,
 				ECC929AB3A6D57658B9FB667A1D20D53 /* ZLDevceAuthorize.m */,
 			);
-			name = ZLAuthorization;
 			path = ZLAuthorization;
 			sourceTree = "<group>";
 		};
@@ -2684,7 +2669,6 @@
 				E99781A0409849C2B515C36269299BF2 /* Resources */,
 				D5E18F47B95C2DF4700719C023830DFA /* Support Files */,
 			);
-			name = UMCCommonLog;
 			path = UMCCommonLog;
 			sourceTree = "<group>";
 		};
@@ -2776,7 +2760,6 @@
 				72D4230CAFD9FF2818E362E0913A78EB /* ZLSDKRegisterManager.h */,
 				4FDB50B74A97BC10757A188EBE02639C /* ZLSDKRegisterManager.m */,
 			);
-			name = ZLLaunch;
 			path = ZLLaunch;
 			sourceTree = "<group>";
 		};
@@ -2983,7 +2966,6 @@
 				BE74912698162B2B977AB69FA19F81A4 /* Reachability */,
 				ACBEE075C826B08499DAC9AD55E3C4FA /* Support Files */,
 			);
-			name = GoogleUtilities;
 			path = GoogleUtilities;
 			sourceTree = "<group>";
 		};
@@ -2993,7 +2975,6 @@
 				12CB74EBCCC2E42B54BDB8BC8F08F69E /* ZLVersionManager.h */,
 				748BD8641DF7DEDC85675F3ABC278EDC /* ZLVersionManager.m */,
 			);
-			name = ZLVersionManager;
 			path = ZLVersionManager;
 			sourceTree = "<group>";
 		};
@@ -3076,7 +3057,6 @@
 				0E3E934555B77C1C0D89A30915A3244F /* Resources */,
 				18B95AC8AE0886945BFDDBB470CA110F /* Support Files */,
 			);
-			name = FFToast;
 			path = FFToast;
 			sourceTree = "<group>";
 		};
@@ -3094,7 +3074,6 @@
 				5129356669182FE266E7F89F1FB1DBFA /* encode */,
 				F8AB5B7D759372BFB07A006A039C4FB8 /* Support Files */,
 			);
-			name = nanopb;
 			path = nanopb;
 			sourceTree = "<group>";
 		};
@@ -3104,7 +3083,6 @@
 				334F1C21254BB00A8EF9CADDA58EAF5F /* UIImage+ZLBlur.h */,
 				B470C39F5522BE69F0278A7EC31FDB7E /* UIImage+ZLBlur.m */,
 			);
-			name = UIImage;
 			path = UIImage;
 			sourceTree = "<group>";
 		};
@@ -3139,7 +3117,6 @@
 				47F62CBFCC3286D70D39DDBC9D70C1AE /* MBProgressHUD.m */,
 				B55D64F5C11AC29507893F967377ED4C /* Support Files */,
 			);
-			name = MBProgressHUD;
 			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
@@ -3163,7 +3140,6 @@
 				FD421246CCB92CEA7D6189FD2F274802 /* Frameworks */,
 				D9A1A1A002D87134616895E748EE6E24 /* Support Files */,
 			);
-			name = GoogleAppMeasurement;
 			path = GoogleAppMeasurement;
 			sourceTree = "<group>";
 		};
@@ -3185,7 +3161,6 @@
 				BB8C865FA6D0464F51ECB6DA772197E5 /* ViewFrameAccessor.m */,
 				7455306C3D12400EEA087BB4F037A5A6 /* Support Files */,
 			);
-			name = FrameAccessor;
 			path = FrameAccessor;
 			sourceTree = "<group>";
 		};
@@ -3197,7 +3172,6 @@
 				8C3B63312BDD7E93771336F5574FFBCB /* Support Files */,
 				52F69EADE6B185041C296F5A3B90BFFB /* UI */,
 			);
-			name = ReactiveCocoa;
 			path = ReactiveCocoa;
 			sourceTree = "<group>";
 		};
@@ -3223,7 +3197,6 @@
 				76773F12C9F4830B76E661F0FD03856A /* NSString+ZLPinyin.h */,
 				293DECF105B36194DC1C506F36389548 /* NSString+ZLPinyin.m */,
 			);
-			name = NSString;
 			path = NSString;
 			sourceTree = "<group>";
 		};
@@ -3233,7 +3206,6 @@
 				1BB4F9227DA48BBAF7C4F9D5FC8C2EE1 /* standard */,
 				DC88805B6CDE24DCBAC1E4C2F78B4F40 /* Support Files */,
 			);
-			name = LKDBHelper;
 			path = LKDBHelper;
 			sourceTree = "<group>";
 		};
@@ -3315,7 +3287,6 @@
 				5B1F4B621DCAEEAE05CCAE9F3168CE2E /* ZLTextView.h */,
 				A90DBED13B845799E11AEF757D583870 /* ZLTextView.m */,
 			);
-			name = ZLTextView;
 			path = ZLTextView;
 			sourceTree = "<group>";
 		};
@@ -3364,7 +3335,6 @@
 				7A2DE58ABF3B10CBEFFB51A83DF38804 /* FBLPromises.h */,
 				E6B66F310DE9A5A3678E726B2C5C52B2 /* Support Files */,
 			);
-			name = PromisesObjC;
 			path = PromisesObjC;
 			sourceTree = "<group>";
 		};
@@ -3374,7 +3344,6 @@
 				964D278FEDE0D61DA0A139E6FE713A35 /* Core */,
 				301EC1198C6423BFC7353C90368C9B78 /* Support Files */,
 			);
-			name = SDWebImage;
 			path = SDWebImage;
 			sourceTree = "<group>";
 		};
@@ -3443,7 +3412,6 @@
 			children = (
 				A8C46D1C8A4C3DBD6E02AEA580DFFD50 /* ZLConfuseDefine.h */,
 			);
-			name = ZLConfuse;
 			path = ZLConfuse;
 			sourceTree = "<group>";
 		};
@@ -3488,7 +3456,6 @@
 				73C7350E617778553B12A65F8E47F120 /* Frameworks */,
 				83859A060F44C7D61ACB6FE39072E52D /* Support Files */,
 			);
-			name = UMCPush;
 			path = UMCPush;
 			sourceTree = "<group>";
 		};
@@ -3631,7 +3598,6 @@
 				148BD7466BDB6753F32D46AFA66B2AC5 /* YYModel.h */,
 				CE649FC30B865B562D99912EE4D6D1B3 /* Support Files */,
 			);
-			name = YYModel;
 			path = YYModel;
 			sourceTree = "<group>";
 		};
@@ -3642,7 +3608,6 @@
 				9F3B5476C31D9DC16809E6A346CB741E /* THLabel.m */,
 				4B3617979DB9E13DC4075A2199CF704C /* Support Files */,
 			);
-			name = THLabel;
 			path = THLabel;
 			sourceTree = "<group>";
 		};
@@ -3699,7 +3664,6 @@
 				ECB7CDF7FC06AEC46E0425202A7F27EB /* Resources */,
 				A2307D27B82EC99B70BD8786B7B795CF /* Support Files */,
 			);
-			name = HSSetTableViewController;
 			path = HSSetTableViewController;
 			sourceTree = "<group>";
 		};
