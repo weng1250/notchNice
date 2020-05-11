@@ -45,8 +45,6 @@ target 'NotchNice' do
     pod 'MBProgressHUD', '~> 0.9.1'
     # UI 布局库
     pod 'Masonry', '~> 1.1'
-    # 网络库
-    pod 'AFNetworking'
     # YYmolde
     pod 'YYModel', '~> 1.0.4'
     # LKDB 对FMDB的二次封装
