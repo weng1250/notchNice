@@ -21,6 +21,8 @@
 		A1B5DE2E246AF6CF009316A3 /* WallpaperModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B5DE2D246AF6CF009316A3 /* WallpaperModel.swift */; };
 		A1B5DE30246AF958009316A3 /* BangDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B5DE2F246AF958009316A3 /* BangDataSource.swift */; };
 		A1B5DE32246AF964009316A3 /* WallpaperDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B5DE31246AF964009316A3 /* WallpaperDataSource.swift */; };
+		A1B5DE35246B03EF009316A3 /* BangCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B5DE34246B03EF009316A3 /* BangCollectionViewCell.swift */; };
+		A1B5DE37246B03FE009316A3 /* WallpaperCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B5DE36246B03FE009316A3 /* WallpaperCollectionViewCell.swift */; };
 		B57683B8AA633E00FBD5A9F8 /* libPods-NotchNice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B48841DAC4064693CC318A5E /* libPods-NotchNice.a */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +49,8 @@
 		A1B5DE2D246AF6CF009316A3 /* WallpaperModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperModel.swift; sourceTree = "<group>"; };
 		A1B5DE2F246AF958009316A3 /* BangDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BangDataSource.swift; sourceTree = "<group>"; };
 		A1B5DE31246AF964009316A3 /* WallpaperDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperDataSource.swift; sourceTree = "<group>"; };
+		A1B5DE34246B03EF009316A3 /* BangCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BangCollectionViewCell.swift; sourceTree = "<group>"; };
+		A1B5DE36246B03FE009316A3 /* WallpaperCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperCollectionViewCell.swift; sourceTree = "<group>"; };
 		B48841DAC4064693CC318A5E /* libPods-NotchNice.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NotchNice.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -106,6 +110,7 @@
 		A1B5DE052467EB3F009316A3 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				A1B5DE33246B03DA009316A3 /* Cell */,
 				A1B5DE1E246A6249009316A3 /* Data */,
 				A1B5DE082467EBAF009316A3 /* View */,
 				A1B5DE062467EB69009316A3 /* HomeViewController.swift */,
@@ -156,6 +161,15 @@
 				A1B5DE31246AF964009316A3 /* WallpaperDataSource.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		A1B5DE33246B03DA009316A3 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A1B5DE34246B03EF009316A3 /* BangCollectionViewCell.swift */,
+				A1B5DE36246B03FE009316A3 /* WallpaperCollectionViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		D55FED094E99DD9823B1B91D /* Pods */ = {
@@ -286,9 +300,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1B5DE35246B03EF009316A3 /* BangCollectionViewCell.swift in Sources */,
 				A1B5DDF224670E2F009316A3 /* AppDelegate.swift in Sources */,
 				A1B5DE2C246AF6BE009316A3 /* BangModel.swift in Sources */,
 				A1B5DE30246AF958009316A3 /* BangDataSource.swift in Sources */,
+				A1B5DE37246B03FE009316A3 /* WallpaperCollectionViewCell.swift in Sources */,
 				A1B5DE2E246AF6CF009316A3 /* WallpaperModel.swift in Sources */,
 				A1B5DE1B2469B6E0009316A3 /* WallPaperListVC.swift in Sources */,
 				A1B5DE1D2469B705009316A3 /* BangListVC.swift in Sources */,
