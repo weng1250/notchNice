@@ -15,6 +15,7 @@
 #import "ZLAdPlatformAction.h"
 #import "ZLAdsManager.h"
 #import "NSObject+ZLMultiParamsSelector.h"
+#import "NSObject+ZLNoCrash.h"
 #import "NSString+VersionUtil.h"
 #import "NSString+ZLPinyin.h"
 #import "AFNetworking-Bridging-Header.h"

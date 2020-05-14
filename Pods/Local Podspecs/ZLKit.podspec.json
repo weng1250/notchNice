@@ -64,6 +64,9 @@
         "UMCCommonLog": [
 
         ],
+        "Bugly": [
+          "2.5.0"
+        ],
         "SDWebImage": [
           "4.4.6"
         ],

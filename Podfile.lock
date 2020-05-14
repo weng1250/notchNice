@@ -1,4 +1,5 @@
 PODS:
+  - Bugly (2.5.0)
   - FFToast (1.2.0)
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
@@ -69,6 +70,7 @@ PODS:
     - Google-Mobile-Ads-SDK
     - ZLKit/ZLBasic
   - ZLKit/ZLBasic (0.0.1):
+    - Bugly (= 2.5.0)
     - FFToast
     - FrameAccessor (~> 1.3.2)
     - ReactiveCocoa (~> 2.5)
@@ -97,6 +99,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - Bugly
     - FFToast
     - FMDB
     - FrameAccessor
@@ -134,6 +137,7 @@ CHECKOUT OPTIONS:
     :tag: v3.2.1
 
 SPEC CHECKSUMS:
+  Bugly: 3ca9f255c01025582df26f9222893b383c7e4b4e
   FFToast: 60e0f3c9fd8fc473205015055ee39cd200404e01
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   FrameAccessor: 0f7ba6ce37be9a5d0302a27c731dca70af8d438b
@@ -158,7 +162,7 @@ SPEC CHECKSUMS:
   UMCPush: 1edd856027dcf905333effb4040ace5d236a7316
   UMCSecurityPlugins: 0831a08f3988f3cea9f1d3a7626cd9bee4fef150
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
-  ZLKit: 55f40ccba15a8a9c5121498c956cf7798fc0da33
+  ZLKit: 10685110cbcf3ea697d3916425b5b1e2d47a341a
 
 PODFILE CHECKSUM: abf383bfcf0c1bd59af01eb72a382bd642d36748
 
