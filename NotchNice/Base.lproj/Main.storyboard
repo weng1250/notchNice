@@ -23,7 +23,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Cqf-X0-Xnd">
-                                <rect key="frame" x="30" y="738" width="354" height="44"/>
+                                <rect key="frame" x="30" y="798" width="354" height="44"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NPg-fu-DK2">
                                         <rect key="frame" x="0.0" y="5" width="71" height="34"/>
@@ -99,7 +99,7 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="vis-dg-uvW" firstAttribute="top" secondItem="lKC-Of-aah" secondAttribute="bottom" constant="8" symbolic="YES" id="6wh-Y7-Ifk"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Cqf-X0-Xnd" secondAttribute="bottom" constant="80" id="GUj-2D-3Qd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Cqf-X0-Xnd" secondAttribute="bottom" constant="20" id="GUj-2D-3Qd"/>
                             <constraint firstItem="vis-dg-uvW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Gqj-Zj-AKx"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vis-dg-uvW" secondAttribute="trailing" id="IvL-QV-Zfn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Cqf-X0-Xnd" secondAttribute="trailing" constant="30" id="PNT-2G-VGu"/>

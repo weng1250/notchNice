@@ -24,6 +24,7 @@ class HomeViewController: UIViewController {
         menuStackView.layer.cornerRadius = 4
         menuStackView.layer.masksToBounds = true
         
+        menuBottom.constant = 20
         wallpaperContainerTop.constant = 0
         bangContainerTop.constant = 0
     }
@@ -46,6 +47,7 @@ class HomeViewController: UIViewController {
         static let bangContainerHeight = 120
         static let menuBottomExpandingBottom = 30
         static let menuBottomPickupBottom = 100
+        static let menuBetweenTopAndSafeArea = 64.0
     }
     
     @IBOutlet weak var wallPaperImageView: UIImageView!
@@ -65,11 +67,13 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func actionBangBtn(_ sender: Any) {
-        
+        hasShowBangList = !hasShowBangList
+        showBangList(toShow: hasShowBangList)
     }
     
     @IBAction func actionWallPaperBtn(_ sender: Any) {
-        
+        hasShowWallpaperList = !hasShowWallpaperList
+        showWallPaper(toShow: hasShowWallpaperList)
     }
     
     @IBAction func actionApplePreviewBtn(_ sender: Any) {
@@ -87,6 +91,8 @@ class HomeViewController: UIViewController {
     // MARK: - Private
     private var isInPreviewMode: Bool = false
     private var isMenuExpanded: Bool = false
+    private var hasShowWallpaperList: Bool = false
+    private var hasShowBangList: Bool = false
     
     private func enterPreview() {
         UIView.animate(withDuration: 0.4) {
@@ -118,4 +124,31 @@ class HomeViewController: UIViewController {
             
         }
     }
+    
+    private func showWallPaper(toShow: Bool) {
+        let safeAreaBottom = self.view.layoutMargins.bottom
+        wallpaperContainerTop.constant = toShow ? (safeAreaBottom + CGFloat(C.menuBetweenTopAndSafeArea)) : 0
+        UIView.animate(withDuration: 0.25,
+                       delay: 0,
+                       usingSpringWithDamping: 1,
+                       initialSpringVelocity: 1,
+                       options: UIView.AnimationOptions.curveLinear,
+                       animations: {
+                        self.wallpaperContainerView.superview?.layoutIfNeeded()
+        }, completion: nil)
+    }
+    
+    private func showBangList(toShow: Bool) {
+        let safeAreaBottom = self.view.layoutMargins.bottom
+        bangContainerTop.constant = toShow ? (safeAreaBottom + CGFloat(C.menuBetweenTopAndSafeArea)) : 0
+        UIView.animate(withDuration: 0.25,
+                       delay: 0,
+                       usingSpringWithDamping: 1,
+                       initialSpringVelocity: 1,
+                       options: UIView.AnimationOptions.curveLinear,
+                       animations: {
+                        self.bangContainerView.superview?.layoutIfNeeded()
+        }, completion: nil)
+    }
+
 }
