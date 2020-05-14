@@ -1,8 +1,6 @@
 PODS:
   - Bugly (2.5.0)
   - DoraemonKit/Core (3.0.2)
-  - DoraemonKit/WithGPS (3.0.2):
-    - DoraemonKit/Core
   - DoraemonKit/WithLoad (3.0.2):
     - DoraemonKit/Core
   - FFToast (1.2.0)
@@ -91,7 +89,6 @@ PODS:
 
 DEPENDENCIES:
   - DoraemonKit/Core (~> 3.0.2)
-  - DoraemonKit/WithGPS (~> 3.0.2)
   - DoraemonKit/WithLoad (~> 3.0.2)
   - Google-Mobile-Ads-SDK
   - HSSetTableViewController (~> 1.3.1)
@@ -174,6 +171,6 @@ SPEC CHECKSUMS:
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
   ZLKit: 10685110cbcf3ea697d3916425b5b1e2d47a341a
 
-PODFILE CHECKSUM: f5759eab4ef345d873a28ab13aa993a6dde04e80
+PODFILE CHECKSUM: ac71b108a51105c104e67d70b14ee96ff188ac44
 
 COCOAPODS: 1.9.0

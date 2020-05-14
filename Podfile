@@ -59,7 +59,6 @@ target 'NotchNice' do
     pod 'Google-Mobile-Ads-SDK'
     # 滴滴的开发辅助工具
     pod 'DoraemonKit/Core', '~> 3.0.2', :configurations => ['Debug'] #Required
-    pod 'DoraemonKit/WithGPS', '~> 3.0.2', :configurations => ['Debug'] #Optional
     pod 'DoraemonKit/WithLoad', '~> 3.0.2', :configurations => ['Debug'] #Optional
     
 end
