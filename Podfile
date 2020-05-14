@@ -55,8 +55,12 @@ target 'NotchNice' do
     pod 'SVProgressHUD'
     # 全能的tableView，支持多样式，封装度很好 https://github.com/shaohuihu/HSSetTableViewController
     pod 'HSSetTableViewController','~> 1.3.1'
-
+    # 谷歌全家桶
     pod 'Google-Mobile-Ads-SDK'
+    # 滴滴的开发辅助工具
+    pod 'DoraemonKit/Core', '~> 3.0.2', :configurations => ['Debug'] #Required
+    pod 'DoraemonKit/WithGPS', '~> 3.0.2', :configurations => ['Debug'] #Optional
+    pod 'DoraemonKit/WithLoad', '~> 3.0.2', :configurations => ['Debug'] #Optional
     
 end
 

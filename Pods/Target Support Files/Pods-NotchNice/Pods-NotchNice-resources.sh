@@ -97,6 +97,7 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/DoraemonKit/DoraemonKit.bundle"
   install_resource "${PODS_CONFIGURATION_BUILD_DIR}/FFToast/FFToast.bundle"
   install_resource "${PODS_ROOT}/HSSetTableViewController/HSSetTableViewController/HSSetTableViewController.bundle"
   install_resource "${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle"

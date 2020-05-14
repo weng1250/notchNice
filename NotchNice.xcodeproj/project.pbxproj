@@ -193,6 +193,7 @@
 				A1B5DDEB24670E2F009316A3 /* Frameworks */,
 				A1B5DDEC24670E2F009316A3 /* Resources */,
 				67EE71B077A17002F2FA4A94 /* [CP] Copy Pods Resources */,
+				C82B6BFC2BE7588EB896D3F5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -291,6 +292,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C82B6BFC2BE7588EB896D3F5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NotchNice/Pods-NotchNice-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NotchNice/Pods-NotchNice-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NotchNice/Pods-NotchNice-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
