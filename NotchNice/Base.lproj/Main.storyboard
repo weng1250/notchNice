@@ -22,6 +22,24 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QzY-dh-g9j" userLabel="ApplePreviewImageView">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pWs-oB-Vcf" userLabel="BangContainerView">
+                                <rect key="frame" x="0.0" y="904" width="414" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="kPI-ab-GgM"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="iyl-Uq-CL2" kind="embed" identifier="BangListEmberInHome" id="gHt-GQ-eOa"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vis-dg-uvW" userLabel="WallpaperContainerView">
+                                <rect key="frame" x="0.0" y="904" width="414" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="nD8-hw-1VU"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="Jb7-wt-VsT" kind="embed" identifier="WallpaperListEmberInHome" id="vBu-Hm-i5m"/>
+                                </connections>
+                            </containerView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Cqf-X0-Xnd">
                                 <rect key="frame" x="30" y="798" width="354" height="44"/>
                                 <subviews>
@@ -77,24 +95,6 @@
                                     <constraint firstAttribute="height" constant="44" id="XFx-xf-ik2"/>
                                 </constraints>
                             </stackView>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pWs-oB-Vcf" userLabel="BangContainerView">
-                                <rect key="frame" x="0.0" y="904" width="414" height="120"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="120" id="kPI-ab-GgM"/>
-                                </constraints>
-                                <connections>
-                                    <segue destination="iyl-Uq-CL2" kind="embed" identifier="BangListEmberInHome" id="gHt-GQ-eOa"/>
-                                </connections>
-                            </containerView>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vis-dg-uvW" userLabel="WallpaperContainerView">
-                                <rect key="frame" x="0.0" y="904" width="414" height="200"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="nD8-hw-1VU"/>
-                                </constraints>
-                                <connections>
-                                    <segue destination="Jb7-wt-VsT" kind="embed" identifier="WallpaperListEmberInHome" id="vBu-Hm-i5m"/>
-                                </connections>
-                            </containerView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -124,6 +124,7 @@
                         <outlet property="bangContainerView" destination="pWs-oB-Vcf" id="i9N-e0-5fq"/>
                         <outlet property="menuBottom" destination="GUj-2D-3Qd" id="iHg-dg-uoi"/>
                         <outlet property="menuStackView" destination="Cqf-X0-Xnd" id="rxX-eN-4wp"/>
+                        <outlet property="tapGesture" destination="0Ca-1H-7st" id="XL8-5F-R8S"/>
                         <outlet property="wallPaperImageView" destination="lKC-Of-aah" id="As7-eY-ZA0"/>
                         <outlet property="wallpaperContainerTop" destination="6wh-Y7-Ifk" id="TzS-3z-qqf"/>
                         <outlet property="wallpaperContainerView" destination="vis-dg-uvW" id="2ja-zW-i3U"/>
@@ -132,8 +133,8 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="0Ca-1H-7st">
                     <connections>
-                        <action selector="handleTap:" destination="BYZ-38-t0r" id="o90-2c-xzv"/>
-                        <outlet property="delegate" destination="BYZ-38-t0r" id="e8K-Rz-bqd"/>
+                        <action selector="handleTap:" destination="BYZ-38-t0r" id="Ar0-nK-3eg"/>
+                        <outlet property="delegate" destination="8bC-Xf-vdC" id="tjI-67-zJN"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>

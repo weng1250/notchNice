@@ -27,6 +27,8 @@ class HomeViewController: UIViewController {
         menuBottom.constant = 20
         wallpaperContainerTop.constant = 0
         bangContainerTop.constant = 0
+        
+        self.view.addGestureRecognizer(tapGesture)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -58,6 +60,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var wallpaperContainerTop: NSLayoutConstraint!
     @IBOutlet weak var bangContainerTop: NSLayoutConstraint!
     @IBOutlet weak var menuBottom: NSLayoutConstraint!
+    @IBOutlet var tapGesture: UITapGestureRecognizer!
     
     private var bangListVC: BangListVC?
     private var wallpaperListVC: WallPaperListVC?
@@ -68,11 +71,17 @@ class HomeViewController: UIViewController {
     
     @IBAction func actionBangBtn(_ sender: Any) {
         hasShowBangList = !hasShowBangList
+        if hasShowWallpaperList {
+            showWallPaper(toShow: false)
+        }
         showBangList(toShow: hasShowBangList)
     }
     
     @IBAction func actionWallPaperBtn(_ sender: Any) {
         hasShowWallpaperList = !hasShowWallpaperList
+        if hasShowBangList {
+            showBangList(toShow: false)
+        }
         showWallPaper(toShow: hasShowWallpaperList)
     }
     
@@ -97,8 +106,9 @@ class HomeViewController: UIViewController {
     private func enterPreview() {
         UIView.animate(withDuration: 0.4) {
             self.view.subviews.forEach { (subview) in
-                guard subview != self.wallPaperImageView else { return }
-                subview.alpha = (subview == self.applePreviewImageView) ? 1.0 : 1
+                if subview != self.wallPaperImageView {
+                    subview.alpha = (subview == self.applePreviewImageView) ? 1.0 : 0
+                }
             }
         }
     }
@@ -107,6 +117,8 @@ class HomeViewController: UIViewController {
         UIView.animate(withDuration: 0.4) {
             self.applePreviewImageView.alpha = 0
             self.menuStackView.alpha = 1
+            self.wallpaperContainerView.alpha = 1
+            self.bangContainerView.alpha = 1
         }
     }
     
@@ -126,8 +138,9 @@ class HomeViewController: UIViewController {
     }
     
     private func showWallPaper(toShow: Bool) {
+        hasShowWallpaperList = toShow
         let safeAreaBottom = self.view.layoutMargins.bottom
-        wallpaperContainerTop.constant = toShow ? (safeAreaBottom + CGFloat(C.menuBetweenTopAndSafeArea)) : 0
+        wallpaperContainerTop.constant = toShow ? -(safeAreaBottom + CGFloat(C.menuBetweenTopAndSafeArea) + CGFloat(C.wallpaperContainerHeight)) : 0
         UIView.animate(withDuration: 0.25,
                        delay: 0,
                        usingSpringWithDamping: 1,
@@ -139,8 +152,9 @@ class HomeViewController: UIViewController {
     }
     
     private func showBangList(toShow: Bool) {
+        hasShowBangList = toShow
         let safeAreaBottom = self.view.layoutMargins.bottom
-        bangContainerTop.constant = toShow ? (safeAreaBottom + CGFloat(C.menuBetweenTopAndSafeArea)) : 0
+        bangContainerTop.constant = toShow ? -(safeAreaBottom + CGFloat(C.menuBetweenTopAndSafeArea) + CGFloat(C.bangContainerHeight)) : 0
         UIView.animate(withDuration: 0.25,
                        delay: 0,
                        usingSpringWithDamping: 1,
