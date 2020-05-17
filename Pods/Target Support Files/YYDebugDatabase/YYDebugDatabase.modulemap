@@ -1,0 +1,6 @@
+module YYDebugDatabase {
+  umbrella header "YYDebugDatabase-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -27,7 +27,7 @@ class HomeViewController: UIViewController {
         wallpaperContainerTop.constant = 0
         bangContainerTop.constant = 0
         
-        self.view.addGestureRecognizer(tapGesture)
+        wallPaperImageView.addGestureRecognizer(tapGesture)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

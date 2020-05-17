@@ -60,7 +60,8 @@ target 'NotchNice' do
     # 滴滴的开发辅助工具
     pod 'DoraemonKit/Core', '~> 3.0.2', :configurations => ['Debug'] #Required
     pod 'DoraemonKit/WithLoad', '~> 3.0.2', :configurations => ['Debug'] #Optional
-    
+    pod 'DoraemonKit/WithMLeaksFinder', '~> 3.0.2', :configurations => ['Debug']
+    pod 'DoraemonKit/WithDatabase', '~> 3.0.2', :configurations => ['Debug']
 end
 
 

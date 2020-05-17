@@ -102,6 +102,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "${PODS_ROOT}/HSSetTableViewController/HSSetTableViewController/HSSetTableViewController.bundle"
   install_resource "${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle"
   install_resource "${PODS_ROOT}/UMCCommonLog/UMCommonLog/UMCommonLog.bundle"
+  install_resource "${PODS_ROOT}/YYDebugDatabase/DebugDatabase/Web.bundle"
   install_resource "${PODS_ROOT}/../../../ZLKit/ZLVendor/iVersion/iVersion.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
@@ -109,6 +110,7 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "${PODS_ROOT}/HSSetTableViewController/HSSetTableViewController/HSSetTableViewController.bundle"
   install_resource "${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle"
   install_resource "${PODS_ROOT}/UMCCommonLog/UMCommonLog/UMCommonLog.bundle"
+  install_resource "${PODS_ROOT}/YYDebugDatabase/DebugDatabase/Web.bundle"
   install_resource "${PODS_ROOT}/../../../ZLKit/ZLVendor/iVersion/iVersion.bundle"
 fi
 

@@ -7,6 +7,9 @@
 //
 
 import UIKit
+#if DEBUG
+import DoraemonKit
+#endif
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -18,8 +21,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+        configThirdPartSDKS()
+        
     }
 
+    private func configThirdPartSDKS() {
+        #if DEBUG
+        DoraemonManager.shareInstance().install(withPid: "91a7bb15f93362b3f53299d07e302863")
+        #endif
+    }
+    
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
         // This occurs shortly after the scene enters the background, or when its session is discarded.
