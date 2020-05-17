@@ -23,13 +23,14 @@ class WallPaperListVC: UIViewController {
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
-        
+
         let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
         // itemSize要与屏幕成正比例
         let cellHeight = self.view.frame.size.height - 2 * C.cellContentInset.top
         let cellWidth = cellHeight * C.cellWidthHeightRatio
         layout.itemSize = CGSize.init(width: cellWidth, height: cellHeight)
         layout.sectionInset = UIEdgeInsets.init(top: 0, left: C.cellContentInset.left, bottom: 0, right: C.cellContentInset.right)
+        collectionView.collectionViewLayout = layout
     }
     
     // MARK: - UI

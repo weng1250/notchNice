@@ -17,8 +17,11 @@ class BangListVC: UIViewController {
         
         collectionView.delegate = self
         collectionView.dataSource = self
+        
         collectionView.reloadData()
     }
+    
+
     
     // MARK: - UI
     @IBOutlet weak var collectionView: UICollectionView!
