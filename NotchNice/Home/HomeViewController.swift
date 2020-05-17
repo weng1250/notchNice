@@ -20,10 +20,9 @@ class HomeViewController: UIViewController {
     }
     
     private func setupView() {
-        menuStackView.addBackgroundColor(.white)
-        menuStackView.layer.cornerRadius = 4
-        menuStackView.layer.masksToBounds = true
-        
+        menuStackView.zl_addBackgroundColor(.white)
+        menuStackView.zl_setCornerradius(4)
+     
         menuBottom.constant = 20
         wallpaperContainerTop.constant = 0
         bangContainerTop.constant = 0

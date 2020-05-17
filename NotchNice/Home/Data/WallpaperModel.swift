@@ -11,9 +11,9 @@ import UIKit
 class WallpaperModel: NSObject, Codable {
     var id: String
     var name: String?
-    var vip: Bool
+    var vip: Int
     
-    enum CodingKeys: CodingKey {
+    enum CodingKeys: String, CodingKey {
         case id
         case name
         case vip

@@ -926,6 +926,7 @@
 		A06B65569B3C4DE113277FA1C670BE96 /* doraemon_hierarchy_select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FCCE67EF3B8088CAD74258426AF39B44 /* doraemon_hierarchy_select@2x.png */; };
 		A0CB16FF2F8C4C3B46BC559DB9114DF3 /* DoraemonFPSUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CBE8DB0D61B521855B659A018363FDC /* DoraemonFPSUtil.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		A152CD4B378F7B5B3C1D9A4D285B8887 /* FBLPromise+Do.h in Headers */ = {isa = PBXBuildFile; fileRef = FC5AE429DC8F052DCFEFDBB3F7FC09FF /* FBLPromise+Do.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A16C4ACB247121650056963B /* ZLConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16C4ACA247121650056963B /* ZLConstant.swift */; };
 		A17196DBBC7CD9E6929892423DCEBCED /* doraemon_check_circle_fill@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E4CFFEAE8D8B1EC711B2F24ADDB92CBF /* doraemon_check_circle_fill@3x.png */; };
 		A19C0F01A9F30F0674F773FA337FA17C /* DoraemonVisualInfoWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = A689FB8561F00F0B8603A6748BCD0B02 /* DoraemonVisualInfoWindow.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		A1A3EE4A3958E367E8812E58B42BF7DA /* UISwitch+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C5B58B8CC25CB7187D1EBBBD620ED0 /* UISwitch+RACSignalSupport.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -2677,6 +2678,7 @@
 		A0D520CB0B709D95CEEDB4B6C61DA5C2 /* RACUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACUnit.h; path = ReactiveCocoa/RACUnit.h; sourceTree = "<group>"; };
 		A0DC20F479AAA7ABCCE6688E627D3C45 /* DoraemonStatisticsUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DoraemonStatisticsUtil.m; path = iOS/DoraemonKit/Src/Core/Util/DoraemonStatisticsUtil.m; sourceTree = "<group>"; };
 		A10B969418D7FA7E88D8529FBE13CF2D /* DoraemonMethodUseTimePlugin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DoraemonMethodUseTimePlugin.m; path = iOS/DoraemonKit/Src/MethodUseTime/DoraemonMethodUseTimePlugin.m; sourceTree = "<group>"; };
+		A16C4ACA247121650056963B /* ZLConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLConstant.swift; sourceTree = "<group>"; };
 		A1848339CA2C44DC90D770D54193546F /* UIViewController+DoraemonVCProfiler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+DoraemonVCProfiler.m"; path = "iOS/DoraemonKit/Src/Core/Plugin/Performance/VCProfiler/UIViewController+DoraemonVCProfiler.m"; sourceTree = "<group>"; };
 		A18C54F5363522856ECFAD35AB8975EB /* SDWebImageOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageOperation.h; path = SDWebImage/SDWebImageOperation.h; sourceTree = "<group>"; };
 		A1C6EF2716388BF394D043EA0CA55F0A /* FBLPromise+Recover.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Recover.m"; path = "Sources/FBLPromises/FBLPromise+Recover.m"; sourceTree = "<group>"; };
@@ -4461,6 +4463,7 @@
 				AEFFCA22E2418E45A7EF3DDF15AEE420 /* MTMUtilsMacro_Log.h */,
 				276DC01F8BDAB5E5CDB4E52D24C7E6A4 /* MTMUtilsMacro_UI.h */,
 				6603816943F62AFD2AD8FBF99921F652 /* ZLSharedDefine.h */,
+				A16C4ACA247121650056963B /* ZLConstant.swift */,
 			);
 			name = Macros;
 			path = ZLBasic/Macros;
@@ -7585,6 +7588,7 @@
 				5F1ECA1EB36080ED789290A14351B70C /* NSArray+MTMSafe.m in Sources */,
 				56126AA8F1BAC50CC495C2648A7B41C4 /* NSDictionary+MTMSafe.m in Sources */,
 				7283663AFE8266E22A26763208D72A5B /* NSError+MTMSimpleCreation.m in Sources */,
+				A16C4ACB247121650056963B /* ZLConstant.swift in Sources */,
 				27B34E9DA2EFB7168D2B994586C1A1C8 /* NSNumber+MTMSafe.m in Sources */,
 				2E85FFEDA6FBA6A64F5602619E332254 /* NSObject+ZLMultiParamsSelector.m in Sources */,
 				B3BABDFBDFFFAB927593A6A287E8B8C8 /* NSObject+ZLNoCrash.m in Sources */,

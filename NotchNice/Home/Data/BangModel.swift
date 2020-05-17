@@ -11,7 +11,7 @@ import UIKit
 class BangModel: NSObject, Codable {
     var id: String
     var name: String?
-    var vip: Bool
+    var vip: Int
     
     enum CodingKeys: CodingKey {
         case id

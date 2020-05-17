@@ -19,7 +19,13 @@ class WallpaperDataSource: NSObject {
         var list: [WallpaperModel] = []
         for dict in jsonArray {
             guard let data = try? JSONSerialization.data(withJSONObject: dict, options: .fragmentsAllowed) else { return nil }
-            if let model = try? JSONDecoder().decode(WallpaperModel.self, from: data) {
+            var model: WallpaperModel? = nil
+            do {
+                model = try JSONDecoder().decode(WallpaperModel.self, from: data)
+            } catch {
+                print(error.localizedDescription)
+            }
+            if let model = model {
                 list.append(model)
             }
         }

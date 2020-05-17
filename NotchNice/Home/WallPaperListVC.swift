@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ZLKit
 
 class WallPaperListVC: UIViewController {
 
@@ -19,8 +20,25 @@ class WallPaperListVC: UIViewController {
         collectionView.dataSource = self
         collectionView.reloadData()
     }
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        
+        let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
+        // itemSize要与屏幕成正比例
+        let cellHeight = self.view.frame.size.height - 2 * C.cellContentInset.top
+        let cellWidth = cellHeight * C.cellWidthHeightRatio
+        layout.itemSize = CGSize.init(width: cellWidth, height: cellHeight)
+        layout.sectionInset = UIEdgeInsets.init(top: 0, left: C.cellContentInset.left, bottom: 0, right: C.cellContentInset.right)
+    }
+    
     // MARK: - UI
     @IBOutlet weak var collectionView: UICollectionView!
+    
+    private class C {
+        static let cellContentInset = UIEdgeInsets.init(top: 20, left: 20, bottom: 20, right: 20)
+        static let cellWidthHeightRatio = screenWidth / screenHeight
+    }
     
     // MARK: - Private
        private var selectedWallpaperModel: WallpaperModel? = nil
