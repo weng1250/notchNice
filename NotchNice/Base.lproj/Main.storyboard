@@ -22,6 +22,12 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QzY-dh-g9j" userLabel="ApplePreviewImageView">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sB0-4T-L5S">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="rnJ-HI-gaY"/>
+                                </constraints>
+                            </imageView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pWs-oB-Vcf" userLabel="BangContainerView">
                                 <rect key="frame" x="0.0" y="904" width="414" height="120"/>
                                 <constraints>
@@ -110,11 +116,14 @@
                             <constraint firstItem="QzY-dh-g9j" firstAttribute="centerY" secondItem="lKC-Of-aah" secondAttribute="centerY" id="Qdo-kI-bg2"/>
                             <constraint firstItem="Cqf-X0-Xnd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="RFI-fw-ecm"/>
                             <constraint firstItem="lKC-Of-aah" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="UaD-0B-bJH"/>
+                            <constraint firstItem="sB0-4T-L5S" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ltH-2w-fff"/>
                             <constraint firstItem="QzY-dh-g9j" firstAttribute="centerX" secondItem="lKC-Of-aah" secondAttribute="centerX" id="mIH-Eu-dYw"/>
                             <constraint firstItem="QzY-dh-g9j" firstAttribute="height" secondItem="lKC-Of-aah" secondAttribute="height" id="o2V-5J-SGB"/>
                             <constraint firstItem="lKC-Of-aah" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="pIR-jI-mjF"/>
+                            <constraint firstItem="sB0-4T-L5S" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="v9Y-4G-awh"/>
                             <constraint firstAttribute="trailing" secondItem="lKC-Of-aah" secondAttribute="trailing" id="vMO-4Y-nGP"/>
                             <constraint firstItem="QzY-dh-g9j" firstAttribute="width" secondItem="lKC-Of-aah" secondAttribute="width" id="vz8-pA-2zq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sB0-4T-L5S" secondAttribute="trailing" id="xyW-XS-ESO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -122,6 +131,8 @@
                         <outlet property="applePreviewImageView" destination="QzY-dh-g9j" id="6oY-f7-bwl"/>
                         <outlet property="bangContainerTop" destination="Pdt-Xf-9aq" id="QwO-GN-fST"/>
                         <outlet property="bangContainerView" destination="pWs-oB-Vcf" id="i9N-e0-5fq"/>
+                        <outlet property="bangImageView" destination="sB0-4T-L5S" id="LyU-vR-foi"/>
+                        <outlet property="bangImageViewHeight" destination="rnJ-HI-gaY" id="0Va-0F-xQD"/>
                         <outlet property="menuBottom" destination="GUj-2D-3Qd" id="iHg-dg-uoi"/>
                         <outlet property="menuStackView" destination="Cqf-X0-Xnd" id="rxX-eN-4wp"/>
                         <outlet property="tapGesture" destination="0Ca-1H-7st" id="XL8-5F-R8S"/>
@@ -178,21 +189,38 @@
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cWV-xJ-wRh">
                                                     <rect key="frame" x="0.0" y="0.0" width="82" height="60"/>
-                                                </imageView>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lj8-Nb-9DY">
-                                                    <rect key="frame" x="62" y="40" width="20" height="20"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="20" id="OnB-zJ-D6X"/>
-                                                        <constraint firstAttribute="height" constant="20" id="jbk-l1-hKM"/>
+                                                        <constraint firstAttribute="height" constant="60" id="IRS-bb-DAk"/>
                                                     </constraints>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UgA-EL-iJa">
+                                                    <rect key="frame" x="0.0" y="40" width="20" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="20" id="naK-Ft-UQn"/>
+                                                        <constraint firstAttribute="height" constant="20" id="r8b-x2-Zep"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LM3-8M-5fL">
+                                                    <rect key="frame" x="62" y="40" width="20" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="20" id="Ukl-9O-Ywk"/>
+                                                        <constraint firstAttribute="height" constant="20" id="sOb-fc-YF1"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="cWV-xJ-wRh" firstAttribute="top" secondItem="fuI-Mz-vup" secondAttribute="top" id="IpP-Se-4xh"/>
-                                                <constraint firstAttribute="bottom" secondItem="cWV-xJ-wRh" secondAttribute="bottom" id="k7p-DT-u1c"/>
-                                                <constraint firstAttribute="bottom" secondItem="Lj8-Nb-9DY" secondAttribute="bottom" id="kfz-I9-0Ey"/>
+                                                <constraint firstItem="UgA-EL-iJa" firstAttribute="leading" secondItem="fuI-Mz-vup" secondAttribute="leading" id="QwF-qj-IwN"/>
+                                                <constraint firstAttribute="trailing" secondItem="LM3-8M-5fL" secondAttribute="trailing" id="V5V-9F-Zg6"/>
+                                                <constraint firstAttribute="bottom" secondItem="LM3-8M-5fL" secondAttribute="bottom" id="dVp-Ui-AaV"/>
+                                                <constraint firstAttribute="bottom" secondItem="UgA-EL-iJa" secondAttribute="bottom" id="jfu-FS-YIq"/>
                                                 <constraint firstItem="cWV-xJ-wRh" firstAttribute="leading" secondItem="fuI-Mz-vup" secondAttribute="leading" id="qEQ-gz-KIY"/>
-                                                <constraint firstAttribute="trailing" secondItem="Lj8-Nb-9DY" secondAttribute="trailing" id="xOw-Fz-z2z"/>
                                                 <constraint firstAttribute="trailing" secondItem="cWV-xJ-wRh" secondAttribute="trailing" id="yBZ-zi-S4V"/>
                                             </constraints>
                                         </collectionViewCellContentView>
@@ -200,7 +228,9 @@
                                         <size key="customSize" width="82" height="60"/>
                                         <connections>
                                             <outlet property="bangImageView" destination="cWV-xJ-wRh" id="qB0-2x-5JH"/>
-                                            <outlet property="selectedFlagImageView" destination="Lj8-Nb-9DY" id="qw2-WU-Hew"/>
+                                            <outlet property="bangImageViewHeight" destination="IRS-bb-DAk" id="ybE-0J-bSs"/>
+                                            <outlet property="hotIconfontLabel" destination="UgA-EL-iJa" id="sAE-4u-Xj9"/>
+                                            <outlet property="lockIconfontLabel" destination="LM3-8M-5fL" id="QZM-kJ-bbl"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>

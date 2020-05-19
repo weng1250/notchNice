@@ -21,6 +21,10 @@ class HomeViewController: UIViewController {
         bangListVC?.select(at: 0)
     }
     
+    override var preferredStatusBarStyle: UIStatusBarStyle  {
+        return .lightContent
+    }
+    
     private func setupView() {
         menuStackView.zl_addBackgroundColor(.white)
         menuStackView.zl_setCornerradius(4)
@@ -55,6 +59,8 @@ class HomeViewController: UIViewController {
         static let menuBetweenTopAndSafeArea = 64.0
     }
     
+    @IBOutlet weak var bangImageView: UIImageView!
+    @IBOutlet weak var bangImageViewHeight: NSLayoutConstraint!
     @IBOutlet weak var wallPaperImageView: UIImageView!
     @IBOutlet weak var applePreviewImageView: UIImageView!
     @IBOutlet weak var menuStackView: UIStackView!
@@ -109,7 +115,7 @@ class HomeViewController: UIViewController {
     private func enterPreview() {
         UIView.animate(withDuration: 0.4) {
             self.view.subviews.forEach { (subview) in
-                if subview != self.wallPaperImageView {
+                if subview != self.wallPaperImageView, subview != self.bangImageView {
                     subview.alpha = (subview == self.applePreviewImageView) ? 1.0 : 0
                 }
             }
@@ -181,7 +187,9 @@ extension HomeViewController: WallPaperListDelegate {
 extension HomeViewController: BangListDelegate {
     func bangListDidSelect(at index: Int, model: BangModel) {
         if let image = UIImage.init(named: model.id) {
-            
+            bangImageView.image = image
+            let originWidthHeightRatio = image.size.height / image.size.width
+            bangImageViewHeight.constant = screenWidth * originWidthHeightRatio
         }
     }
 }

@@ -12,10 +12,14 @@ class BangModel: NSObject, Codable {
     var id: String
     var name: String?
     var vip: Int
+    var hot: Int?
+    // 客户端自定义变量
+    var hasUnlocked: Bool = false
     
     enum CodingKeys: CodingKey {
         case id
         case name
         case vip
+        case hot
     }
 }
