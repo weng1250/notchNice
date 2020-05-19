@@ -17,6 +17,8 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
+        wallpaperListVC?.select(at: 0)
+        bangListVC?.select(at: 0)
     }
     
     private func setupView() {
@@ -37,8 +39,10 @@ class HomeViewController: UIViewController {
         }
         if segueID == "BangListEmberInHome" {
             bangListVC = segue.destination as? BangListVC
+            bangListVC?.delegate = self
         } else if segueID == "WallpaperListEmberInHome" {
             wallpaperListVC = segue.destination as? WallPaperListVC
+            wallpaperListVC?.delegate = self
         }
     }
     
@@ -163,5 +167,21 @@ class HomeViewController: UIViewController {
                         self.bangContainerView.superview?.layoutIfNeeded()
         }, completion: nil)
     }
+}
 
+extension HomeViewController: WallPaperListDelegate {
+    func wallpaperListDidSelect(at index: Int, model: WallpaperModel) {
+        if let path = Bundle.main.path(forResource: model.id, ofType: "png"),
+            let image = UIImage.init(contentsOfFile: path) {
+            wallPaperImageView.image = image
+        }
+    }
+}
+
+extension HomeViewController: BangListDelegate {
+    func bangListDidSelect(at index: Int, model: BangModel) {
+        if let image = UIImage.init(named: model.id) {
+            
+        }
+    }
 }

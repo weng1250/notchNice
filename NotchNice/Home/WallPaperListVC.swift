@@ -9,7 +9,28 @@
 import UIKit
 import ZLKit
 
+protocol WallPaperListDelegate: NSObjectProtocol {
+    func wallpaperListDidSelect(at index: Int, model: WallpaperModel)
+}
+
 class WallPaperListVC: UIViewController {
+    // MARK: - Public
+    public func select(at index: Int) {
+        guard items.count > 0, index >= 0, index < items.count - 1 else { return }
+        selectedWallpaperModel = items[index]
+        delegate?.wallpaperListDidSelect(at: index, model: selectedWallpaperModel!)
+        collectionView.reloadData()
+    }
+    
+    public func select(on model: WallpaperModel) {
+        guard items.count > 0 else { return }
+        if let index = items.firstIndex(of: model) {
+            selectedWallpaperModel = model
+            delegate?.wallpaperListDidSelect(at: index, model: model)
+        }
+    }
+    
+    public weak var delegate: WallPaperListDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +40,7 @@ class WallPaperListVC: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.reloadData()
+        
     }
     
     override func viewWillLayoutSubviews() {
@@ -42,13 +64,13 @@ class WallPaperListVC: UIViewController {
     }
     
     // MARK: - Private
-       private var selectedWallpaperModel: WallpaperModel? = nil
-       private lazy var items: [WallpaperModel] = {
-           if let list = WallpaperDataSource.shared.wallpaperListModels {
-               return list
-           }
-           return []
-       }()
+    private var selectedWallpaperModel: WallpaperModel? = nil
+    private lazy var items: [WallpaperModel] = {
+        if let list = WallpaperDataSource.shared.wallpaperListModels {
+           return list
+        }
+        return []
+    }()
 }
 
 extension WallPaperListVC: UICollectionViewDelegate, UICollectionViewDataSource {
@@ -73,5 +95,6 @@ extension WallPaperListVC: UICollectionViewDelegate, UICollectionViewDataSource 
         selectedWallpaperModel = model
         collectionView.reloadData()
         collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
+        delegate?.wallpaperListDidSelect(at: indexPath.item, model: model)
     }
 }

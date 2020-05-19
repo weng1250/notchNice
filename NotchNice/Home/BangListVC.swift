@@ -8,8 +8,30 @@
 
 import UIKit
 
-class BangListVC: UIViewController {
+protocol BangListDelegate: NSObjectProtocol {
+    func bangListDidSelect(at index: Int, model: BangModel)
+}
 
+class BangListVC: UIViewController {
+    // MARK: - Public
+    public func select(at index: Int) {
+        guard items.count > 0, index >= 0, index < items.count - 1 else { return }
+        selectedBangModel = items[index]
+        delegate?.bangListDidSelect(at: index, model: selectedBangModel!)
+        collectionView.reloadData()
+    }
+    
+    public func select(on model: BangModel) {
+        guard items.count > 0 else { return }
+        if let index = items.firstIndex(of: model) {
+            selectedBangModel = model
+            delegate?.bangListDidSelect(at: index, model: model)
+        }
+    }
+    
+    public weak var delegate: BangListDelegate?
+    
+    // MARK: - Life
     override func viewDidLoad() {
         super.viewDidLoad()
         // 让毛玻璃能超出区域
@@ -58,5 +80,6 @@ extension BangListVC: UICollectionViewDelegate, UICollectionViewDataSource {
         selectedBangModel = model
         collectionView.reloadData()
         collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
+        delegate?.bangListDidSelect(at: indexPath.item, model: model)
     }
 }

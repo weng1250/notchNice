@@ -27,6 +27,7 @@ class BangCollectionViewCell: UICollectionViewCell {
     
     override func prepareForReuse() {
         super.prepareForReuse()
+        bangImageView.image = nil
     }
     
     @IBOutlet weak var bangImageView: UIImageView!

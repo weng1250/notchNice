@@ -29,6 +29,7 @@ class WallpaperCollectionViewCell: UICollectionViewCell {
     
     override func prepareForReuse() {
         super.prepareForReuse()
+        wallpaperImageView.image = nil
     }
     
     @IBOutlet weak var wallpaperImageView: UIImageView!
