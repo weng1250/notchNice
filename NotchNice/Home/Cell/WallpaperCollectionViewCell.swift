@@ -10,10 +10,12 @@ import UIKit
 
 class WallpaperCollectionViewCell: UICollectionViewCell {
     
-    func update(with bangModel: WallpaperModel, selected: Bool) {
+    func update(with model: WallpaperModel, selected: Bool) {
         selectedFlagImageView.isHidden = !selected
-        let image = UIImage.init(name: bangModel.id)
-        wallpaperImageView.image = image
+        let path = Bundle.main.path(forResource: model.id, ofType: "png")
+        if let path = path, let image = UIImage.init(contentsOfFile: path) {
+            wallpaperImageView.image = image
+        }
     }
     
     override func awakeFromNib() {

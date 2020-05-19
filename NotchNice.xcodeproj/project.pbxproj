@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A1261ABC24739C7700234E72 /* wallpaper_1.png in Resources */ = {isa = PBXBuildFile; fileRef = A1261ABA2472F29000234E72 /* wallpaper_1.png */; };
 		A1B5DDF224670E2F009316A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B5DDF124670E2F009316A3 /* AppDelegate.swift */; };
 		A1B5DDF424670E2F009316A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B5DDF324670E2F009316A3 /* SceneDelegate.swift */; };
 		A1B5DDF924670E2F009316A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1B5DDF724670E2F009316A3 /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 /* Begin PBXFileReference section */
 		5418038D0589A4AF65D7786D /* Pods-NotchNice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotchNice.debug.xcconfig"; path = "Target Support Files/Pods-NotchNice/Pods-NotchNice.debug.xcconfig"; sourceTree = "<group>"; };
 		88649201BA8883DB2C372C5A /* Pods-NotchNice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotchNice.release.xcconfig"; path = "Target Support Files/Pods-NotchNice/Pods-NotchNice.release.xcconfig"; sourceTree = "<group>"; };
+		A1261ABA2472F29000234E72 /* wallpaper_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wallpaper_1.png; sourceTree = "<group>"; };
 		A1B5DDEE24670E2F009316A3 /* NotchNice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotchNice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1B5DDF124670E2F009316A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1B5DDF324670E2F009316A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +76,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A1261AB82472F27700234E72 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A1261AB92472F28300234E72 /* Wallpapers */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A1261AB92472F28300234E72 /* Wallpapers */ = {
+			isa = PBXGroup;
+			children = (
+				A1261ABA2472F29000234E72 /* wallpaper_1.png */,
+			);
+			path = Wallpapers;
+			sourceTree = "<group>";
+		};
 		A1B5DDE524670E2F009316A3 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +115,7 @@
 			children = (
 				A1B5DDF124670E2F009316A3 /* AppDelegate.swift */,
 				A1B5DDF324670E2F009316A3 /* SceneDelegate.swift */,
+				A1261AB82472F27700234E72 /* Resources */,
 				A1B5DE092467F681009316A3 /* Basic */,
 				A1B5DE052467EB3F009316A3 /* Home */,
 				A1B5DDF724670E2F009316A3 /* Main.storyboard */,
@@ -244,6 +263,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1261ABC24739C7700234E72 /* wallpaper_1.png in Resources */,
 				A1B5DE2A246AF673009316A3 /* wallpaper.json in Resources */,
 				A1B5DDFE24670E32009316A3 /* LaunchScreen.storyboard in Resources */,
 				A1B5DDFB24670E32009316A3 /* Assets.xcassets in Resources */,

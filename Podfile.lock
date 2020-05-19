@@ -8,7 +8,6 @@ PODS:
     - DoraemonKit/Core
   - DoraemonKit/WithMLeaksFinder (3.0.2):
     - DoraemonKit/Core
-  - FFToast (1.2.0)
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
@@ -85,7 +84,6 @@ PODS:
     - ZLKit/ZLBasic
   - ZLKit/ZLBasic (0.0.1):
     - Bugly (= 2.5.0)
-    - FFToast
     - FrameAccessor (~> 1.3.2)
     - ReactiveCocoa (~> 2.5)
     - SDWebImage (= 4.4.6)
@@ -119,7 +117,6 @@ SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Bugly
     - DoraemonKit
-    - FFToast
     - FMDB
     - FrameAccessor
     - GCDWebServer
@@ -160,7 +157,6 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   Bugly: 3ca9f255c01025582df26f9222893b383c7e4b4e
   DoraemonKit: 8587e7a9aae0773dfc96707d2369d89d2a21b3d2
-  FFToast: 60e0f3c9fd8fc473205015055ee39cd200404e01
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   FrameAccessor: 0f7ba6ce37be9a5d0302a27c731dca70af8d438b
   GCDWebServer: 2c156a56c8226e2d5c0c3f208a3621ccffbe3ce4
@@ -186,7 +182,7 @@ SPEC CHECKSUMS:
   UMCSecurityPlugins: 0831a08f3988f3cea9f1d3a7626cd9bee4fef150
   YYDebugDatabase: 037486297a7dd40bc50e2c6df5de7b4ad24c9c17
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
-  ZLKit: 10685110cbcf3ea697d3916425b5b1e2d47a341a
+  ZLKit: 7f94dd707d8e36025799b3ff59f8bfe7765b8f11
 
 PODFILE CHECKSUM: cbffebee7b3e5e04dd362d7180c8ba642cdce153
 

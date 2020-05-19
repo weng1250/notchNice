@@ -12,7 +12,7 @@ class BangCollectionViewCell: UICollectionViewCell {
     
     func update(with bangModel: BangModel, selected: Bool) {
         selectedFlagImageView.isHidden = !selected
-        let image = UIImage.init(name: bangModel.id)
+        let image = UIImage.init(named: bangModel.id)
         bangImageView.image = image
     }
     
