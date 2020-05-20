@@ -17,7 +17,12 @@ class BangCollectionViewCell: UICollectionViewCell {
         let originWidthHeightRatio = image.size.height / image.size.width
         bangImageViewHeight.constant = self.frame.size.width * originWidthHeightRatio
         
-        
+        lockIconfontLabel.isHidden = bangModel.hasUnlocked
+        if let hot = bangModel.hot, hot == 1 {
+            hotIconfontLabel.isHidden = false
+        } else {
+            hotIconfontLabel.isHidden = true
+        }
     }
     
     override func awakeFromNib() {
@@ -25,7 +30,13 @@ class BangCollectionViewCell: UICollectionViewCell {
         layer.cornerRadius = 2
         layer.masksToBounds = true
         
+        lockIconfontLabel.text = "\u{e626}"
+        lockIconfontLabel.textColor = NotchMainThemeColorOrangeColor
+        lockIconfontLabel.font = UIFont.init(name: "iconfont", size: 14)
         
+        hotIconfontLabel.text = "\u{e608}"
+        hotIconfontLabel.textColor = NotchMainThemeColorOrangeColor
+        hotIconfontLabel.font = UIFont.init(name: "iconfont", size: 16)
     }
     
     override func prepareForReuse() {
