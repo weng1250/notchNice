@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>iconfont.ttf</string>
+	</array>
 	<key>GADApplicationIdentifier</key>
 	<string>ca-app-pub-6238180514744364~6745424175</string>
 	<key>CFBundleDevelopmentRegion</key>
