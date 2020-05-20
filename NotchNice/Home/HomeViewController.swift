@@ -8,6 +8,7 @@
 
 import UIKit
 import ZLKit
+import AudioToolbox
 
 class HomeViewController: UIViewController {
     // MARK: - Public
@@ -77,10 +78,12 @@ class HomeViewController: UIViewController {
     private var wallpaperListVC: WallPaperListVC?
     
     @IBAction func actionAlbumBtn(_ sender: Any) {
+        vibrateSlightly()
         
     }
     
     @IBAction func actionBangBtn(_ sender: Any) {
+        vibrateSlightly()
         hasShowBangList = !hasShowBangList
         if hasShowWallpaperList {
             showWallPaper(toShow: false)
@@ -89,6 +92,7 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func actionWallPaperBtn(_ sender: Any) {
+        vibrateSlightly()
         hasShowWallpaperList = !hasShowWallpaperList
         if hasShowBangList {
             showBangList(toShow: false)
@@ -101,6 +105,7 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func actionSaveBtn(_ sender: Any) {
+        vibrateSlightly()
         guard let bang = bangListVC?.selectedBangModel else { return }
         if bang.vip == 1, bang.hasUnlocked == false {
             // 素材是vip素材且未解锁
@@ -136,7 +141,7 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func actionMore(_ sender: Any) {
-        
+        vibrateSlightly()
     }
     
     @IBAction func handleTap(_ sender: UITapGestureRecognizer) {
@@ -151,6 +156,11 @@ class HomeViewController: UIViewController {
     
     private func saveToAlbum() {
         
+    }
+    
+    private func vibrateSlightly() {
+        let impact = UIImpactFeedbackGenerator.init(style: .light)
+        impact.impactOccurred()
     }
     
     private func enterPreview() {
@@ -177,6 +187,7 @@ class HomeViewController: UIViewController {
     }
     
     private func handlePreview() {
+        vibrateSlightly()
         isInPreviewMode = !isInPreviewMode
         if isInPreviewMode {
             enterPreview()
