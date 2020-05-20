@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         configZLKit()
         ZLLauncher.doItOnLauch()
-        
+        preloadRewardAd()
         return true
     }
     
@@ -31,6 +31,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         c.appKey_Umeng = "5ebc1f38570df3d7f9000232"
         c.appId_Bugly = "0bd17827aa"
         c.appKey_Bugly = "a74ffb54-76c1-41f2-811d-5a5b53fca8f3"
+    }
+    
+    private func preloadRewardAd() {
+        ZLAdLoaderAdmob.sharedInstance().preloadRewardAd(withUnitID: ZLKitOpenConfig.shared().rewardId_Admob_test) { (error, ad) in
+            print("admob激励视频预热失败结果:\(error.localizedDescription)")
+        }
     }
 
     // MARK: UISceneSession Lifecycle
