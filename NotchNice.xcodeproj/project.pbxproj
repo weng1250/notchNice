@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A1261ABC24739C7700234E72 /* wallpaper_1.png in Resources */ = {isa = PBXBuildFile; fileRef = A1261ABA2472F29000234E72 /* wallpaper_1.png */; };
 		A1261ABE24742C0C00234E72 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1261ABD24742C0C00234E72 /* Constant.swift */; };
+		A1261AC024744A5E00234E72 /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1261ABF24744A5E00234E72 /* iconfont.ttf */; };
 		A1B5DDF224670E2F009316A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B5DDF124670E2F009316A3 /* AppDelegate.swift */; };
 		A1B5DDF424670E2F009316A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B5DDF324670E2F009316A3 /* SceneDelegate.swift */; };
 		A1B5DDF924670E2F009316A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1B5DDF724670E2F009316A3 /* Main.storyboard */; };
@@ -33,6 +34,7 @@
 		88649201BA8883DB2C372C5A /* Pods-NotchNice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotchNice.release.xcconfig"; path = "Target Support Files/Pods-NotchNice/Pods-NotchNice.release.xcconfig"; sourceTree = "<group>"; };
 		A1261ABA2472F29000234E72 /* wallpaper_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wallpaper_1.png; sourceTree = "<group>"; };
 		A1261ABD24742C0C00234E72 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		A1261ABF24744A5E00234E72 /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.ttf; sourceTree = "<group>"; };
 		A1B5DDEE24670E2F009316A3 /* NotchNice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotchNice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1B5DDF124670E2F009316A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1B5DDF324670E2F009316A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 		A1261AB82472F27700234E72 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A1261ABF24744A5E00234E72 /* iconfont.ttf */,
 				A1261AB92472F28300234E72 /* Wallpapers */,
 			);
 			path = Resources;
@@ -268,6 +271,7 @@
 			files = (
 				A1261ABC24739C7700234E72 /* wallpaper_1.png in Resources */,
 				A1B5DE2A246AF673009316A3 /* wallpaper.json in Resources */,
+				A1261AC024744A5E00234E72 /* iconfont.ttf in Resources */,
 				A1B5DDFE24670E32009316A3 /* LaunchScreen.storyboard in Resources */,
 				A1B5DDFB24670E32009316A3 /* Assets.xcassets in Resources */,
 				A1B5DDF924670E2F009316A3 /* Main.storyboard in Resources */,

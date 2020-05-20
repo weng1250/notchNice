@@ -50,7 +50,7 @@
                                 <rect key="frame" x="30" y="798" width="354" height="44"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NPg-fu-DK2">
-                                        <rect key="frame" x="0.0" y="5" width="71" height="34"/>
+                                        <rect key="frame" x="0.0" y="5" width="59" height="34"/>
                                         <state key="normal" title="+">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -60,7 +60,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MTs-ba-2tZ">
-                                        <rect key="frame" x="71" y="5" width="70.5" height="34"/>
+                                        <rect key="frame" x="59" y="5" width="59" height="34"/>
                                         <state key="normal" title="刘海">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -69,7 +69,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MVm-Qz-Z90">
-                                        <rect key="frame" x="141.5" y="5" width="71" height="34"/>
+                                        <rect key="frame" x="118" y="5" width="59" height="34"/>
                                         <state key="normal" title="壁纸">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -78,7 +78,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7xV-eR-xaN">
-                                        <rect key="frame" x="212.5" y="5" width="70.5" height="34"/>
+                                        <rect key="frame" x="177" y="5" width="59" height="34"/>
                                         <state key="normal" title="预览">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -87,12 +87,21 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cvr-wU-teE">
-                                        <rect key="frame" x="283" y="5" width="71" height="34"/>
+                                        <rect key="frame" x="236" y="5" width="59" height="34"/>
                                         <state key="normal" title="保存">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="actionSaveBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AvX-YJ-20z"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vg3-VB-0LK" userLabel="更多">
+                                        <rect key="frame" x="295" y="5" width="59" height="34"/>
+                                        <state key="normal" title="更多">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="actionMore:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8c4-qI-fio"/>
                                         </connections>
                                     </button>
                                 </subviews>

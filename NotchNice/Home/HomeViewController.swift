@@ -34,6 +34,8 @@ class HomeViewController: UIViewController {
         bangContainerTop.constant = 0
         
         wallPaperImageView.addGestureRecognizer(tapGesture)
+        
+        setupPreviewImageView()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -102,6 +104,10 @@ class HomeViewController: UIViewController {
         
     }
     
+    @IBAction func actionMore(_ sender: Any) {
+        
+    }
+    
     @IBAction func handleTap(_ sender: UITapGestureRecognizer) {
         handlePreview()
     }
@@ -120,6 +126,10 @@ class HomeViewController: UIViewController {
                 }
             }
         }
+    }
+    
+    private func setupPreviewImageView() {
+        applePreviewImageView.image = UIImage.init(named: "apple_preview_lock_x")
     }
     
     private func leavePreview() {

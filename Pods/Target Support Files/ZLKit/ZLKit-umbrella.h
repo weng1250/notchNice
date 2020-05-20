@@ -67,6 +67,13 @@
 #import "FFConfig.h"
 #import "FFToast.h"
 #import "iVersion.h"
+#import "MTButton.h"
+#import "MTFontModel.h"
+#import "MTIconFont.h"
+#import "MTIconFontManager.h"
+#import "MTIconFontTool.h"
+#import "UIImage+MTIconFont.h"
+#import "UILabel+MTIconFont.h"
 #import "ZLStoreInfo.h"
 #import "ZLStoreRequest.h"
 

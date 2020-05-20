@@ -13,7 +13,7 @@
 #import "ViewFrameAccessor.h"
 #import "MTMSafeCategoryImport.h"
 #import "ReactiveCocoa.h"
-#import "FFToast.h"
+#import "FFToast/FFToast.h"
 #import "FFToast+ZLExtension.h"
 #import "LKDBHelper/LKDBHelper.h"
 #import "UMAnalytics/MobClick.h"
