@@ -39,11 +39,10 @@ class BangListVC: UIViewController {
         
         collectionView.delegate = self
         collectionView.dataSource = self
-        
+        let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
+        layout.sectionInset.left = 10
         collectionView.reloadData()
     }
-    
-
     
     // MARK: - UI
     @IBOutlet weak var collectionView: UICollectionView!

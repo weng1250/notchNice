@@ -24,6 +24,8 @@ class BangCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         layer.cornerRadius = 2
         layer.masksToBounds = true
+        
+        
     }
     
     override func prepareForReuse() {
