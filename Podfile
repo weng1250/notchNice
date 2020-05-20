@@ -64,7 +64,7 @@ target 'NotchNice' do
     pod 'DoraemonKit/WithDatabase', '~> 3.0.2', :configurations => ['Debug']
     
     # 弹窗
-    #pod 'FWPopupView'
+#    pod 'FWPopupView'
 end
 
 

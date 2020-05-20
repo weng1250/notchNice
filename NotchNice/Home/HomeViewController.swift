@@ -101,7 +101,38 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func actionSaveBtn(_ sender: Any) {
-        
+        guard let bang = bangListVC?.selectedBangModel else { return }
+        if bang.vip == 1, bang.hasUnlocked == false {
+            // 素材是vip素材且未解锁
+            let actionSheet = UIAlertController.init(title: NSLocalizedString("解锁", comment: ""), message: NSLocalizedString("该素材是vip素材", comment: ""), preferredStyle: .actionSheet)
+            let viewAdAction = UIAlertAction.init(title: NSLocalizedString("观看广告免费保存", comment: ""), style: .default) { (alertAction) in
+                if let admobRewardAd = ZLAdLoaderAdmob.sharedInstance().prefetchedRewardAd {
+                    ZLAdLoaderAdmob.sharedInstance().presentRewardAd(admobRewardAd, from: self) { (viewAll, ad) in
+                        if viewAll {
+                            // 启动保存流程
+                            self.saveToAlbum()
+                        } else {
+                            FFToast.zl_center(withMessage: NSLocalizedString("未完成看完广告", comment: ""), duration: 1)
+                        }
+                    }
+                }
+            }
+            let inpurchaseAction = UIAlertAction.init(title: NSLocalizedString("一次性付费永久解锁所有素材", comment: ""), style: .default) { (alertAction) in
+                
+            }
+            let cancelAction = UIAlertAction.init(title: NSLocalizedString("取消", comment: ""), style: .cancel) { (alertAction) in
+                
+            }
+            actionSheet.addAction(inpurchaseAction)
+            if let _ = ZLAdLoaderAdmob.sharedInstance().prefetchedRewardAd {
+                actionSheet.addAction(viewAdAction)
+            }
+            actionSheet.addAction(cancelAction)
+            self.present(actionSheet, animated: true, completion: nil)
+        } else {
+            // 直接保存
+            saveToAlbum()
+        }
     }
     
     @IBAction func actionMore(_ sender: Any) {
@@ -117,6 +148,10 @@ class HomeViewController: UIViewController {
     private var isMenuExpanded: Bool = false
     private var hasShowWallpaperList: Bool = false
     private var hasShowBangList: Bool = false
+    
+    private func saveToAlbum() {
+        
+    }
     
     private func enterPreview() {
         UIView.animate(withDuration: 0.4) {

@@ -30,6 +30,7 @@ class BangListVC: UIViewController {
     }
     
     public weak var delegate: BangListDelegate?
+    public var selectedBangModel: BangModel? = nil
     
     // MARK: - Life
     override func viewDidLoad() {
@@ -48,7 +49,6 @@ class BangListVC: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     
     // MARK: - Private
-    private var selectedBangModel: BangModel? = nil
     private lazy var items: [BangModel] = {
         if let list = BangDataSource.shared.bangListModels {
             return list
