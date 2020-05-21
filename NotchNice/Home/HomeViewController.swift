@@ -129,7 +129,7 @@ class HomeViewController: UIViewController {
                 
             }
             actionSheet.addAction(inpurchaseAction)
-            if let _ = ZLAdLoaderAdmob.sharedInstance().prefetchedRewardAd {
+            if let ad = ZLAdLoaderAdmob.sharedInstance().prefetchedRewardAd, ad.isReady {
                 actionSheet.addAction(viewAdAction)
             }
             actionSheet.addAction(cancelAction)
