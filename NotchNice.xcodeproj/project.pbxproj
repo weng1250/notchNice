@@ -11,7 +11,6 @@
 		A1261ABE24742C0C00234E72 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1261ABD24742C0C00234E72 /* Constant.swift */; };
 		A1261AC024744A5E00234E72 /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1261ABF24744A5E00234E72 /* iconfont.ttf */; };
 		A1B5DDF224670E2F009316A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B5DDF124670E2F009316A3 /* AppDelegate.swift */; };
-		A1B5DDF424670E2F009316A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B5DDF324670E2F009316A3 /* SceneDelegate.swift */; };
 		A1B5DDF924670E2F009316A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1B5DDF724670E2F009316A3 /* Main.storyboard */; };
 		A1B5DDFB24670E32009316A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1B5DDFA24670E32009316A3 /* Assets.xcassets */; };
 		A1B5DDFE24670E32009316A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1B5DDFC24670E32009316A3 /* LaunchScreen.storyboard */; };
@@ -37,7 +36,6 @@
 		A1261ABF24744A5E00234E72 /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.ttf; sourceTree = "<group>"; };
 		A1B5DDEE24670E2F009316A3 /* NotchNice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotchNice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1B5DDF124670E2F009316A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A1B5DDF324670E2F009316A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A1B5DDF824670E2F009316A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A1B5DDFA24670E32009316A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1B5DDFD24670E32009316A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -119,7 +117,6 @@
 			isa = PBXGroup;
 			children = (
 				A1B5DDF124670E2F009316A3 /* AppDelegate.swift */,
-				A1B5DDF324670E2F009316A3 /* SceneDelegate.swift */,
 				A1261ABD24742C0C00234E72 /* Constant.swift */,
 				A1261AB82472F27700234E72 /* Resources */,
 				A1B5DE092467F681009316A3 /* Basic */,
@@ -355,7 +352,6 @@
 				A1B5DE1B2469B6E0009316A3 /* WallPaperListVC.swift in Sources */,
 				A1B5DE1D2469B705009316A3 /* BangListVC.swift in Sources */,
 				A1B5DE32246AF964009316A3 /* WallpaperDataSource.swift in Sources */,
-				A1B5DDF424670E2F009316A3 /* SceneDelegate.swift in Sources */,
 				A1B5DE072467EB69009316A3 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -510,6 +506,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3LB8Z456SU;
 				INFOPLIST_FILE = NotchNice/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -529,6 +526,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3LB8Z456SU;
 				INFOPLIST_FILE = NotchNice/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

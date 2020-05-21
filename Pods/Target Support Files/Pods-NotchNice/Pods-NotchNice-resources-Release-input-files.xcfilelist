@@ -1,4 +1,5 @@
 ${PODS_ROOT}/Target Support Files/Pods-NotchNice/Pods-NotchNice-resources.sh
+${PODS_ROOT}/FWPopupView/FWPopupView/FWPopupView/FWPopupView/Resources/FWPopupView.bundle
 ${PODS_ROOT}/HSSetTableViewController/HSSetTableViewController/HSSetTableViewController.bundle
 ${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle
 ${PODS_ROOT}/UMCCommonLog/UMCommonLog/UMCommonLog.bundle

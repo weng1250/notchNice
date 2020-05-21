@@ -12,6 +12,8 @@ PODS:
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
   - FrameAccessor (1.3.2)
+  - FWPopupView (4.1.4):
+    - SnapKit
   - GCDWebServer (3.5.4):
     - GCDWebServer/Core (= 3.5.4)
   - GCDWebServer/Core (3.5.4)
@@ -101,6 +103,7 @@ DEPENDENCIES:
   - DoraemonKit/WithDatabase (~> 3.0.2)
   - DoraemonKit/WithLoad (~> 3.0.2)
   - DoraemonKit/WithMLeaksFinder (~> 3.0.2)
+  - FWPopupView
   - Google-Mobile-Ads-SDK
   - HSSetTableViewController (~> 1.3.1)
   - LKDBHelper
@@ -119,6 +122,7 @@ SPEC REPOS:
     - DoraemonKit
     - FMDB
     - FrameAccessor
+    - FWPopupView
     - GCDWebServer
     - Google-Mobile-Ads-SDK
     - GoogleAppMeasurement
@@ -159,6 +163,7 @@ SPEC CHECKSUMS:
   DoraemonKit: 8587e7a9aae0773dfc96707d2369d89d2a21b3d2
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   FrameAccessor: 0f7ba6ce37be9a5d0302a27c731dca70af8d438b
+  FWPopupView: 8efc8fd8b620fc75756165cdc5163f69b71a7adc
   GCDWebServer: 2c156a56c8226e2d5c0c3f208a3621ccffbe3ce4
   Google-Mobile-Ads-SDK: 7052557293c75c676db55feb707ace9b790f32c1
   GoogleAppMeasurement: 2253e99c1f22638cf234c059144660c338ad76c3
@@ -184,6 +189,6 @@ SPEC CHECKSUMS:
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
   ZLKit: 17a335468fbfa6e322cbbf8533a8d4a62167c8f3
 
-PODFILE CHECKSUM: f2c2b8378443a8df40ef1188f7a1d6828009eca1
+PODFILE CHECKSUM: dac633e4117127f8531e0ffc253f7903c22db0d8
 
 COCOAPODS: 1.9.0

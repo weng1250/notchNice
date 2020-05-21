@@ -78,12 +78,12 @@ class HomeViewController: UIViewController {
     private var wallpaperListVC: WallPaperListVC?
     
     @IBAction func actionAlbumBtn(_ sender: Any) {
-        vibrateSlightly()
+        vibrate()
         
     }
     
     @IBAction func actionBangBtn(_ sender: Any) {
-        vibrateSlightly()
+        vibrate()
         hasShowBangList = !hasShowBangList
         if hasShowWallpaperList {
             showWallPaper(toShow: false)
@@ -92,7 +92,7 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func actionWallPaperBtn(_ sender: Any) {
-        vibrateSlightly()
+        vibrate()
         hasShowWallpaperList = !hasShowWallpaperList
         if hasShowBangList {
             showBangList(toShow: false)
@@ -105,7 +105,7 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func actionSaveBtn(_ sender: Any) {
-        vibrateSlightly()
+        vibrate()
         guard let bang = bangListVC?.selectedBangModel else { return }
         if bang.vip == 1, bang.hasUnlocked == false {
             // 素材是vip素材且未解锁
@@ -141,7 +141,7 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func actionMore(_ sender: Any) {
-        vibrateSlightly()
+        vibrate()
     }
     
     @IBAction func handleTap(_ sender: UITapGestureRecognizer) {
@@ -156,11 +156,6 @@ class HomeViewController: UIViewController {
     
     private func saveToAlbum() {
         
-    }
-    
-    private func vibrateSlightly() {
-        let impact = UIImpactFeedbackGenerator.init(style: .light)
-        impact.impactOccurred()
     }
     
     private func enterPreview() {
@@ -187,7 +182,7 @@ class HomeViewController: UIViewController {
     }
     
     private func handlePreview() {
-        vibrateSlightly()
+        vibrate()
         isInPreviewMode = !isInPreviewMode
         if isInPreviewMode {
             enterPreview()
