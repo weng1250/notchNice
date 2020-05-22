@@ -69,6 +69,7 @@ PODS:
   - SDWebImage/Core (4.4.6)
   - SnapKit (4.2.0)
   - SVProgressHUD (2.2.5)
+  - SwiftyStoreKit (0.15.0)
   - THLabel (1.4.10)
   - UMCAnalytics (6.1.0):
     - UMCCommon
@@ -90,6 +91,7 @@ PODS:
     - ReactiveCocoa (~> 2.5)
     - SDWebImage (= 4.4.6)
     - SnapKit
+    - SwiftyStoreKit
     - UMCAnalytics
     - UMCCommon
     - UMCCommonLog
@@ -137,6 +139,7 @@ SPEC REPOS:
     - SDWebImage
     - SnapKit
     - SVProgressHUD
+    - SwiftyStoreKit
     - THLabel
     - UMCAnalytics
     - UMCCommon
@@ -179,6 +182,7 @@ SPEC CHECKSUMS:
   SDWebImage: 3f3f0c02f09798048c47a5ed0a13f17b063572d8
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftyStoreKit: 033d06b6f87955405d3f844a18a7687c2438592a
   THLabel: 3fc93a0f01f74e4eec7574df2819e576d57150b3
   UMCAnalytics: 3503f179f7af932b30af9ac161ac11fb48fa72b6
   UMCCommon: b0703b0053323f598e01670ea702b8eb1e66e611
@@ -187,7 +191,7 @@ SPEC CHECKSUMS:
   UMCSecurityPlugins: 0831a08f3988f3cea9f1d3a7626cd9bee4fef150
   YYDebugDatabase: 037486297a7dd40bc50e2c6df5de7b4ad24c9c17
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
-  ZLKit: 17a335468fbfa6e322cbbf8533a8d4a62167c8f3
+  ZLKit: cdfa950fe7fe9dca2a2d57a50ebb8309e21cbb78
 
 PODFILE CHECKSUM: dac633e4117127f8531e0ffc253f7903c22db0d8
 
