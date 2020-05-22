@@ -17,7 +17,7 @@ class BangCollectionViewCell: UICollectionViewCell {
         let originWidthHeightRatio = image.size.height / image.size.width
         bangImageViewHeight.constant = self.frame.size.width * originWidthHeightRatio
         
-        lockIconfontLabel.isHidden = bangModel.hasUnlocked
+        lockIconfontLabel.isHidden = bangModel.vip == 0
         if let hot = bangModel.hot, hot == 1 {
             hotIconfontLabel.isHidden = false
         } else {

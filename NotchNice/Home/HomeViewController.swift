@@ -111,7 +111,7 @@ class HomeViewController: UIViewController {
     @IBAction func actionSaveBtn(_ sender: Any) {
         vibrate()
         guard let bang = bangListVC?.selectedBangModel else { return }
-        if bang.vip == 1, bang.hasUnlocked == false {
+        if bang.vip == 1 {
             // 素材是vip素材且未解锁
             let actionSheet = UIAlertController.init(title: NSLocalizedString("解锁", comment: ""), message: NSLocalizedString("该素材是vip素材", comment: ""), preferredStyle: .actionSheet)
             let viewAdAction = UIAlertAction.init(title: NSLocalizedString("观看广告免费保存", comment: ""), style: .default) { (alertAction) in
@@ -170,7 +170,7 @@ class HomeViewController: UIViewController {
             if success {
                 FFToast.zl_center(withMessage: NSLocalizedString("壁纸保存成功，稍后可以到系统设置->墙纸中应用壁纸", comment: ""), duration: 3)
             } else {
-                FFToast.zl_centerErrorToast(withMessage: NSLocalizedString("保存失败，请重试", comment: ""), duration: 1)
+                FFToast.zl_centerErrorToast(withMessage: str, duration: 1)
             }
         }
     }
