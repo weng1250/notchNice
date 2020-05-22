@@ -83,7 +83,7 @@ class HomeViewController: UIViewController {
     
     @IBAction func actionAlbumBtn(_ sender: Any) {
         vibrate()
-        
+        self.present(imagePicker, animated: true, completion: nil)
     }
     
     @IBAction func actionBangBtn(_ sender: Any) {
@@ -157,6 +157,11 @@ class HomeViewController: UIViewController {
     private var isMenuExpanded: Bool = false
     private var hasShowWallpaperList: Bool = false
     private var hasShowBangList: Bool = false
+    private lazy var imagePicker: UIImagePickerController = {
+        let imagePicker = UIImagePickerController()
+        imagePicker.delegate = self as? UIImagePickerControllerDelegate & UINavigationControllerDelegate
+        return imagePicker
+    }()
     
     private func saveToAlbum() {
         let resultImage = resultView.zl_getScreenSnap()
@@ -254,6 +259,15 @@ extension HomeViewController: BangListDelegate {
             let originWidthHeightRatio = image.size.height / image.size.width
             // 左右各扩2pt 避免白边
             bangImageViewHeight.constant = (screenWidth + 4) * originWidthHeightRatio
+        }
+    }
+}
+
+extension HomeViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            wallPaperImageView.image = image
+            picker.dismiss(animated: true, completion: nil)
         }
     }
 }
