@@ -63,8 +63,10 @@ target 'NotchNice' do
     pod 'DoraemonKit/WithMLeaksFinder', '~> 3.0.2', :configurations => ['Debug']
     pod 'DoraemonKit/WithDatabase', '~> 3.0.2', :configurations => ['Debug']
     
-    # 弹窗
+    # 弹窗 仿系统ActionSheet
     pod 'FWPopupView'
+    # 图片处理库, 加载url、优先级、圆角、缩放、高斯模糊、CoreImage滤镜等 https://github.com/kean/Nuke
+    pod 'Nuke'
 end
 
 
