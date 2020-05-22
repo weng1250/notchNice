@@ -20,6 +20,9 @@ class HomeViewController: UIViewController {
         setupView()
         wallpaperListVC?.select(at: 0)
         bangListVC?.select(at: 0)
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.2) {
+            self.actionBangBtn(UIButton())
+        }
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle  {
@@ -170,7 +173,7 @@ class HomeViewController: UIViewController {
     private func enterPreview() {
         UIView.animate(withDuration: 0.4) {
             self.view.subviews.forEach { (subview) in
-                if subview != self.wallPaperImageView, subview != self.bangImageView {
+                if subview != self.resultView {
                     subview.alpha = (subview == self.applePreviewImageView) ? 1.0 : 0
                 }
             }
