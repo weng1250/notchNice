@@ -66,6 +66,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var bangImageViewHeight: NSLayoutConstraint!
     @IBOutlet weak var wallPaperImageView: UIImageView!
     @IBOutlet weak var applePreviewImageView: UIImageView!
+    @IBOutlet weak var resultView: UIView!
     @IBOutlet weak var menuStackView: UIStackView!
     @IBOutlet weak var wallpaperContainerView: UIView!
     @IBOutlet weak var bangContainerView: UIView!
@@ -117,13 +118,12 @@ class HomeViewController: UIViewController {
                             // 启动保存流程
                             self.saveToAlbum()
                         } else {
-                            FFToast.zl_center(withMessage: NSLocalizedString("未完成看完广告", comment: ""), duration: 1)
+                            FFToast.zl_center(withMessage: NSLocalizedString("未完整看完广告", comment: ""), duration: 1)
                         }
                     }
                 }
             }
-            let inpurchaseAction = UIAlertAction.init(title: NSLocalizedString("一次性付费永久解锁所有素材", comment: ""), style: .default) { (alertAction) in
-                
+            let inpurchaseAction = UIAlertAction.init(title: NSLocalizedString("免费试用，试用期间解锁所有素材", comment: ""), style: .destructive) { (alertAction) in
             }
             let cancelAction = UIAlertAction.init(title: NSLocalizedString("取消", comment: ""), style: .cancel) { (alertAction) in
                 
@@ -137,6 +137,7 @@ class HomeViewController: UIViewController {
         } else {
             // 直接保存
             saveToAlbum()
+            
         }
     }
     
@@ -155,7 +156,15 @@ class HomeViewController: UIViewController {
     private var hasShowBangList: Bool = false
     
     private func saveToAlbum() {
-        
+        let resultImage = resultView.zl_getScreenSnap()
+        ZLShareManager.shareToActivity(from: self, withItems: [resultImage], exclude: nil) { (success, type, str) in
+            print(success)
+            if success {
+                FFToast.zl_center(withMessage: NSLocalizedString("壁纸保存成功，稍后可以到系统设置->墙纸中应用壁纸", comment: ""), duration: 3)
+            } else {
+                FFToast.zl_centerErrorToast(withMessage: NSLocalizedString("保存失败，请重试", comment: ""), duration: 1)
+            }
+        }
     }
     
     private func enterPreview() {
@@ -240,7 +249,8 @@ extension HomeViewController: BangListDelegate {
         if let image = UIImage.init(named: model.id) {
             bangImageView.image = image
             let originWidthHeightRatio = image.size.height / image.size.width
-            bangImageViewHeight.constant = screenWidth * originWidthHeightRatio
+            // 左右各扩2pt 避免白边
+            bangImageViewHeight.constant = (screenWidth + 4) * originWidthHeightRatio
         }
     }
 }
