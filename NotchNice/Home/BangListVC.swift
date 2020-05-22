@@ -42,6 +42,7 @@ class BangListVC: UIViewController {
         collectionView.dataSource = self
         let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
         layout.sectionInset.left = 10
+        layout.sectionInset.right = 10
         collectionView.reloadData()
     }
     
