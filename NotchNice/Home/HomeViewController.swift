@@ -23,6 +23,18 @@ class HomeViewController: UIViewController {
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.2) {
             self.actionBangBtn(UIButton())
         }
+        // 直接弹起订阅
+        ZLStoreKit.retrieveProductsInfo(with: Set([SubscribeInfo.monthlySubscribeProductID])) { (result) in
+            print(result)
+            guard let monthlySubscribe = result.retrievedProducts.first else { return }
+            guard let priceUnit = monthlySubscribe.priceLocale.currencySymbol else { return }
+            guard let price = monthlySubscribe.localizedPrice else { return }
+            let desc = monthlySubscribe.localizedDescription
+            
+            ZLStoreKit.purchaseInPurchase(productID: SubscribeInfo.monthlySubscribeProductID, secret: "") { (result) in
+                print(result)
+            }
+        }
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle  {
