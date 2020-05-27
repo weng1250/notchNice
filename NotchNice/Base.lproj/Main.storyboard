@@ -20,9 +20,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OKn-7g-G9n" userLabel="ResultView">
                                 <rect key="frame" x="-2" y="0.0" width="418" height="896"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lKC-Of-aah" userLabel="WallPaperImageView" customClass="ZLScrollImageView" customModule="ZLKit">
-                                        <rect key="frame" x="0.0" y="0.0" width="418" height="896"/>
-                                    </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sB0-4T-L5S">
                                         <rect key="frame" x="0.0" y="0.0" width="418" height="200"/>
                                         <constraints>
@@ -33,12 +30,8 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstItem="sB0-4T-L5S" firstAttribute="top" secondItem="OKn-7g-G9n" secondAttribute="top" id="3uF-Rt-vjn"/>
-                                    <constraint firstItem="lKC-Of-aah" firstAttribute="leading" secondItem="OKn-7g-G9n" secondAttribute="leading" id="Db6-wS-QDc"/>
                                     <constraint firstAttribute="trailing" secondItem="sB0-4T-L5S" secondAttribute="trailing" id="X5g-j1-uyu"/>
-                                    <constraint firstAttribute="trailing" secondItem="lKC-Of-aah" secondAttribute="trailing" id="beU-t5-veg"/>
-                                    <constraint firstItem="lKC-Of-aah" firstAttribute="top" secondItem="OKn-7g-G9n" secondAttribute="top" id="fZF-Nn-KKS"/>
                                     <constraint firstItem="sB0-4T-L5S" firstAttribute="leading" secondItem="OKn-7g-G9n" secondAttribute="leading" id="hVu-Zf-4bq"/>
-                                    <constraint firstAttribute="bottom" secondItem="lKC-Of-aah" secondAttribute="bottom" id="tck-yx-ndy"/>
                                 </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QzY-dh-g9j" userLabel="ApplePreviewImageView">
@@ -192,7 +185,6 @@
                         <outlet property="menuStackView" destination="Cqf-X0-Xnd" id="rxX-eN-4wp"/>
                         <outlet property="resultView" destination="OKn-7g-G9n" id="Fn9-yC-BjH"/>
                         <outlet property="tapGesture" destination="0Ca-1H-7st" id="XL8-5F-R8S"/>
-                        <outlet property="wallPaperImageView" destination="lKC-Of-aah" id="As7-eY-ZA0"/>
                         <outlet property="wallpaperContainerTop" destination="6Qm-OO-4Uo" id="OPt-59-jwF"/>
                         <outlet property="wallpaperContainerView" destination="vis-dg-uvW" id="2ja-zW-i3U"/>
                     </connections>

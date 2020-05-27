@@ -49,6 +49,10 @@ class HomeViewController: UIViewController {
         wallpaperContainerTop.constant = 0
         bangContainerTop.constant = 0
         
+        wallPaperImageView = ZLScrollImageView.init(frame: resultView.bounds)
+        wallPaperImageView.isUserInteractionEnabled = true
+        wallPaperImageView.contentMode = .scaleAspectFit
+        resultView.insertSubview(wallPaperImageView, at: 0)
         wallPaperImageView.addGestureRecognizer(tapGesture)
         
         setupPreviewImageView()
@@ -79,7 +83,7 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var bangImageView: UIImageView!
     @IBOutlet weak var bangImageViewHeight: NSLayoutConstraint!
-    @IBOutlet weak var wallPaperImageView: UIImageView!
+    private var wallPaperImageView: UIImageView!
     @IBOutlet weak var applePreviewImageView: UIImageView!
     @IBOutlet weak var resultView: UIView!
     @IBOutlet weak var menuStackView: UIStackView!
