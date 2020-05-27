@@ -216,7 +216,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="500" id="H5w-n6-I6r"/>
                                 </constraints>
-                                <blurEffect style="extraLight"/>
+                                <blurEffect style="light"/>
                             </visualEffectView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Z1O-Az-a9V">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
@@ -321,7 +321,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="400" id="YI9-dw-RQj"/>
                                 </constraints>
-                                <blurEffect style="extraLight"/>
+                                <blurEffect style="light"/>
                             </visualEffectView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="sZk-Cq-LPa">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
