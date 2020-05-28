@@ -30,10 +30,6 @@ class HomeViewController: UIViewController {
             guard let priceUnit = monthlySubscribe.priceLocale.currencySymbol else { return }
             guard let price = monthlySubscribe.localizedPrice else { return }
             let desc = monthlySubscribe.localizedDescription
-            
-            ZLStoreKit.purchaseInPurchase(productID: SubscribeInfo.monthlySubscribeProductID, secret: "") { (result) in
-                print(result)
-            }
         }
     }
     
@@ -143,6 +139,15 @@ class HomeViewController: UIViewController {
                 }
             }
             let inpurchaseAction = UIAlertAction.init(title: NSLocalizedString("免费试用，试用期间解锁所有素材", comment: ""), style: .destructive) { (alertAction) in
+                ZLStoreKit.purchaseSubscribe(productID: SubscribeInfo.monthlySubscribeProductID, secret: SubscribeInfo.appSharedSecret) { (result) in
+                    print(result)
+                    switch result {
+                    case .success( _):
+                        FFToast.zl_center(withMessage: NSLocalizedString("订阅成功", comment: ""), duration: 1.0)
+                    case .failure( _):
+                        FFToast.zl_center(withMessage: NSLocalizedString("支付失败", comment: ""), duration: 1.8)
+                    }
+                }
             }
             let cancelAction = UIAlertAction.init(title: NSLocalizedString("取消", comment: ""), style: .cancel) { (alertAction) in
                 

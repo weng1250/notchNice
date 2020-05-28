@@ -18,4 +18,5 @@ class SubscribeInfo {
     static let monthlySubscribeAppleID      = "1514624203"
     static let monthlySubscribeProductID    = "NotchGuy_month_subscribe"
     static let monthlySubscribeGroup        = "NotchGuy_subscribe_group"
+    static let appSharedSecret              = "b750af4d88b94711a1dd7f65644e9f9b"
 }
