@@ -51,7 +51,14 @@ class HomeViewController: UIViewController {
         wallPaperImageView.contentMode = .scaleAspectFit
         resultView.insertSubview(wallPaperImageView, at: 0)
         wallPaperImageView.addGestureRecognizer(tapGesture)
+        wallPaperImageView.changeHanler = { [weak self] in
+            guard let self = self else { return }
+            if self.resetBtn.alpha != 1 {
+                self.resetBtn.alpha = 1
+            }
+        }
         
+        resetBtn.alpha = 0
         setupPreviewImageView()
     }
     
@@ -80,7 +87,7 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var bangImageView: UIImageView!
     @IBOutlet weak var bangImageViewHeight: NSLayoutConstraint!
-    private var wallPaperImageView: UIImageView!
+    private var wallPaperImageView: ZLScrollImageView!
     @IBOutlet weak var applePreviewImageView: UIImageView!
     @IBOutlet weak var resultView: UIView!
     @IBOutlet weak var menuStackView: UIStackView!
@@ -89,6 +96,8 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var wallpaperContainerTop: NSLayoutConstraint!
     @IBOutlet weak var bangContainerTop: NSLayoutConstraint!
     @IBOutlet weak var menuBottom: NSLayoutConstraint!
+    @IBOutlet weak var resetBtn: ZLIconfontButton!
+    @IBOutlet weak var resetBtnBottom: NSLayoutConstraint!
     @IBOutlet var tapGesture: UITapGestureRecognizer!
     
     private var bangListVC: BangListVC?
@@ -164,7 +173,6 @@ class HomeViewController: UIViewController {
         } else {
             // 直接保存
             saveToAlbum()
-            
         }
     }
     
@@ -174,6 +182,12 @@ class HomeViewController: UIViewController {
     
     @IBAction func handleTap(_ sender: UITapGestureRecognizer) {
         handlePreview()
+    }
+    
+    @IBAction func actionReset(_ sender: Any) {
+        wallPaperImageView.reset()
+        resetBtn.alpha = 0
+        vibrate()
     }
     
     // MARK: - Private
@@ -219,6 +233,9 @@ class HomeViewController: UIViewController {
             self.menuStackView.alpha = 1
             self.wallpaperContainerView.alpha = 1
             self.bangContainerView.alpha = 1
+            if self.wallPaperImageView.hasChanged {
+                self.resetBtn.alpha = 1
+            }
         }
     }
     

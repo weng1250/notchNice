@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -27,7 +27,7 @@
                                         </constraints>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="sB0-4T-L5S" firstAttribute="top" secondItem="OKn-7g-G9n" secondAttribute="top" id="3uF-Rt-vjn"/>
                                     <constraint firstAttribute="trailing" secondItem="sB0-4T-L5S" secondAttribute="trailing" id="X5g-j1-uyu"/>
@@ -155,6 +155,25 @@
                                     <constraint firstAttribute="height" constant="52" id="XFx-xf-ik2"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dMj-7M-Cac" customClass="ZLIconfontButton" customModule="ZLKit">
+                                <rect key="frame" x="374" y="612" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="Z6k-AJ-dwh"/>
+                                    <constraint firstAttribute="height" constant="30" id="xwq-Sk-V0w"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="iconfontText" value="e609"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iconfontSize">
+                                        <real key="value" value="28"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="actionReset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n3B-I1-aLt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -163,6 +182,7 @@
                             <constraint firstItem="vis-dg-uvW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Gqj-Zj-AKx"/>
                             <constraint firstAttribute="trailing" secondItem="OKn-7g-G9n" secondAttribute="trailing" constant="-2" id="ISp-t0-5QQ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vis-dg-uvW" secondAttribute="trailing" id="IvL-QV-Zfn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dMj-7M-Cac" secondAttribute="trailing" constant="10" id="JaC-BL-TuX"/>
                             <constraint firstItem="pWs-oB-Vcf" firstAttribute="top" secondItem="OKn-7g-G9n" secondAttribute="bottom" id="M6N-s5-wcD"/>
                             <constraint firstItem="OKn-7g-G9n" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="PH3-kb-9Hy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Cqf-X0-Xnd" secondAttribute="trailing" constant="20" id="PNT-2G-VGu"/>
@@ -170,6 +190,7 @@
                             <constraint firstAttribute="trailing" secondItem="pWs-oB-Vcf" secondAttribute="trailing" id="QLt-Bi-kit"/>
                             <constraint firstItem="Cqf-X0-Xnd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="RFI-fw-ecm"/>
                             <constraint firstItem="OKn-7g-G9n" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="TiC-8F-38Q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dMj-7M-Cac" secondAttribute="bottom" constant="220" id="Vqf-nb-TcW"/>
                             <constraint firstItem="OKn-7g-G9n" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-2" id="raD-DD-Lhb"/>
                             <constraint firstAttribute="bottom" secondItem="OKn-7g-G9n" secondAttribute="bottom" id="yur-YH-kVe"/>
                         </constraints>
@@ -183,6 +204,8 @@
                         <outlet property="bangImageViewHeight" destination="rnJ-HI-gaY" id="0Va-0F-xQD"/>
                         <outlet property="menuBottom" destination="GUj-2D-3Qd" id="iHg-dg-uoi"/>
                         <outlet property="menuStackView" destination="Cqf-X0-Xnd" id="rxX-eN-4wp"/>
+                        <outlet property="resetBtn" destination="dMj-7M-Cac" id="XpG-TP-2sM"/>
+                        <outlet property="resetBtnBottom" destination="Vqf-nb-TcW" id="Gwd-ew-ncD"/>
                         <outlet property="resultView" destination="OKn-7g-G9n" id="Fn9-yC-BjH"/>
                         <outlet property="tapGesture" destination="0Ca-1H-7st" id="XL8-5F-R8S"/>
                         <outlet property="wallpaperContainerTop" destination="6Qm-OO-4Uo" id="OPt-59-jwF"/>
