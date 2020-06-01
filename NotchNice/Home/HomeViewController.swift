@@ -46,6 +46,7 @@ class HomeViewController: UIViewController {
         wallpaperContainerTop.constant = 0
         bangContainerTop.constant = 0
         
+        applePreviewImageView.alpha = 0
         wallPaperImageView = ZLScrollImageView.init(frame: resultView.bounds)
         wallPaperImageView.isUserInteractionEnabled = true
         wallPaperImageView.contentMode = .scaleAspectFit
